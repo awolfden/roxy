@@ -25,7 +25,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "1a58f436b67dd8f67a2f2abed7e5559a",
-    "url": "/roxy/static/media/gramophone.1a58f436.png"
+    "url": "/static/media/gramophone.1a58f436.png"
   },
   {
     "revision": "cf59c5b73d5ef38e67320ebcfc5c1d56",
@@ -37,10 +37,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "a75d4046144fb33a6d70ee586eaaeab3",
-    "url": "/roxy/static/media/typewriter.a75d4046.jpeg"
+    "url": "/static/media/typewriter.a75d4046.jpeg"
   },
   {
     "revision": "5bef1e445b5f2d3763dfc7f4ec275e3c",
-    "url": "/roxy/static/media/wood_background.5bef1e44.jpeg"
+    "url": "/static/media/wood_background.5bef1e44.jpeg"
   }
 ]);

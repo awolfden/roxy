@@ -5,23 +5,23 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "a0780ebfddd2b1e94e4d",
-    "url": "/roxy/static/css/2.48adc591.chunk.css"
+    "url": "/static/css/2.48adc591.chunk.css"
   },
   {
     "revision": "1a4ea385bdcfafb33ca3",
-    "url": "/roxy/static/css/main.c36ca37b.chunk.css"
+    "url": "/static/css/main.c36ca37b.chunk.css"
   },
   {
     "revision": "a0780ebfddd2b1e94e4d",
-    "url": "/roxy/static/js/2.7f6359d1.chunk.js"
+    "url": "/static/js/2.7f6359d1.chunk.js"
   },
   {
     "revision": "1a4ea385bdcfafb33ca3",
-    "url": "/roxy/static/js/main.0656d222.chunk.js"
+    "url": "/static/js/main.0656d222.chunk.js"
   },
   {
     "revision": "941ab62fb3c6dc2daeba",
-    "url": "/roxy/static/js/runtime~main.a6a2cc8f.js"
+    "url": "/static/js/runtime~main.a6a2cc8f.js"
   },
   {
     "revision": "1a58f436b67dd8f67a2f2abed7e5559a",

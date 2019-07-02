@@ -1,0 +1,29 @@
+#foodmenu {
+    background-color: gray;
+
+
+}
+
+#drinks, #brunch, #smallPlates {
+    
+    h3 {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.048);
+    }
+
+    .cocktailList, .brunchList, .plateList {
+        margin: auto 250px;
+    }
+
+    p {
+        font-size: 22px;
+        margin-bottom: -5px;
+    }
+
+    span {
+        font-size: 13px;
+        color: gray;
+        font-style: italic;
+    }
+}
+

@@ -1,0 +1,72 @@
+#calendars {
+    
+    .calendar {
+        margin: 0px 40px 70px 40px;
+    }
+}
+
+h1 {
+    font-size: 15px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.musicEventDiv {
+    margin: 10px;
+    padding: 10px;
+    background-color: #4C7498;
+    border: 2px solid #265985;
+    border-radius: 10px;
+    color: white;
+    width: 50%;
+    position: relative; 
+    bottom: 500px;
+    z-index: 100;
+}
+
+.eventEventDiv {
+    margin: 10px;
+    padding: 10px;
+    background-color: #4C7498;
+    border: 2px solid #265985;
+    border-radius: 10px;
+    color: white;
+    width: 50%;
+    position: relative; 
+    bottom: 500px;
+    z-index: 100;
+}
+
+@media only screen and (max-width: 400px) {
+    #calendars {
+        height: 500px;
+        div.App.calendar:nth-child(2) div.rbc-calendar{
+            height: 300px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 411px) {
+    #calendars {
+        height: 500px;
+        
+        div.App.calendar {
+            height: 700px;
+        }
+        
+        div.rbc-calendar{
+            height: 300px !important;
+        }
+    }
+}

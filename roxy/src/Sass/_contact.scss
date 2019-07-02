@@ -1,0 +1,38 @@
+
+#contact {
+    
+    color: white;
+    background-image: url('images/typewriter.jpeg');
+    background-size: cover;
+    
+    h2 {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.322);
+        padding: 5px;
+    }
+
+    p {
+        margin: 0px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .flexContainer {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+
+    .contacts {
+        position: relative;
+        top: 43px;
+        margin-left: 10px;
+
+    }
+
+    
+   
+}

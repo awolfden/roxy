@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/roxy/static/css/main.c36ca37b.chunk.css",
+    "main.js": "/roxy/static/js/main.0656d222.chunk.js",
+    "main.js.map": "/roxy/static/js/main.0656d222.chunk.js.map",
+    "runtime~main.js": "/roxy/static/js/runtime~main.a6a2cc8f.js",
+    "runtime~main.js.map": "/roxy/static/js/runtime~main.a6a2cc8f.js.map",
+    "static/css/2.48adc591.chunk.css": "/roxy/static/css/2.48adc591.chunk.css",
+    "static/js/2.7f6359d1.chunk.js": "/roxy/static/js/2.7f6359d1.chunk.js",
+    "static/js/2.7f6359d1.chunk.js.map": "/roxy/static/js/2.7f6359d1.chunk.js.map",
+    "index.html": "/roxy/index.html",
+    "precache-manifest.da8b33e40ac084f5cd11718f813ebf2c.js": "/roxy/precache-manifest.da8b33e40ac084f5cd11718f813ebf2c.js",
+    "service-worker.js": "/roxy/service-worker.js",
+    "static/css/2.48adc591.chunk.css.map": "/roxy/static/css/2.48adc591.chunk.css.map",
+    "static/css/main.c36ca37b.chunk.css.map": "/roxy/static/css/main.c36ca37b.chunk.css.map",
+    "static/media/App.css": "/roxy/static/media/wood_background.5bef1e44.jpeg",
+    "static/media/gramophone_logo_white.png": "/roxy/static/media/gramophone_logo_white.cf59c5b7.png",
+    "static/media/openformusic.png": "/roxy/static/media/openformusic.05a36bd7.png"
+  }
+}

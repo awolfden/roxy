@@ -11,7 +11,7 @@ class Contact extends Component {
                     website: 'broadwayroxy.com',
                     address1: '554 S Broadway',
                     address2: 'Denver, CO 80209',
-                    phone: '720.436.7041',
+                    phone: '720.456.7041',
                     email: 'info@broadwayroxy.com',
                     linkemail: 'mailto:info@broadwayroxy.com',
                     booking: 'booking@broadwayroxy.com',

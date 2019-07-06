@@ -48,7 +48,7 @@ class SmallPlates extends Component {
     
         return(
             <div id="smallPlates">
-                <h3>Brunch</h3>
+                <h3>Small Plates</h3>
                 <div className="plateList">
                     {showPlateItems}
                 </div>

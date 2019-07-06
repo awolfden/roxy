@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.fb9a827e.chunk.css",
+    "main.css": "/static/css/main.4f767915.chunk.css",
     "main.js": "/static/js/main.3b24c47f.chunk.js",
     "main.js.map": "/static/js/main.3b24c47f.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
@@ -9,10 +9,10 @@
     "static/js/2.7f6359d1.chunk.js": "/static/js/2.7f6359d1.chunk.js",
     "static/js/2.7f6359d1.chunk.js.map": "/static/js/2.7f6359d1.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.31757c11c4dd066f70d10bd79c400159.js": "/precache-manifest.31757c11c4dd066f70d10bd79c400159.js",
+    "precache-manifest.a3dae639e487c6f654bffc0f9b6afa20.js": "/precache-manifest.a3dae639e487c6f654bffc0f9b6afa20.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.48adc591.chunk.css.map": "/static/css/2.48adc591.chunk.css.map",
-    "static/css/main.fb9a827e.chunk.css.map": "/static/css/main.fb9a827e.chunk.css.map",
+    "static/css/main.4f767915.chunk.css.map": "/static/css/main.4f767915.chunk.css.map",
     "static/media/App.css": "/static/media/wood_background.5bef1e44.jpeg",
     "static/media/gramophone_logo_white.png": "/static/media/gramophone_logo_white.cf59c5b7.png",
     "static/media/openformusic.png": "/static/media/openformusic.05a36bd7.png"

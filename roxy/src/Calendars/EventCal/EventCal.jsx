@@ -78,6 +78,8 @@ class EventCal extends Component {
               "resource?": null
             }
           )
+        } else {
+          return(console.log("error"));
         }
       });
       console.log(eventsArray);

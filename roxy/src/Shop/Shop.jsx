@@ -29,6 +29,27 @@ export default function App() {
     });
   };
 
+  const handleRemoveFromCart = (e) => {
+    e.preventDefault();  
+    const id = e.target.id;
+
+    setItemsInCart(itemsInCart => {
+        const itemToRemove = itemsInCart.find(item => item.id == id);
+        //if item is already in cart, update the quantity
+        if (itemToRemove.quantity > 1) {
+            return itemsInCart.map(item => {
+            if (item.id != id) return item;
+            return { ...item, quantity: item.quantity - 1 };
+            });
+        }
+  
+        // //otherwise, remove item from cart
+        const newCart = itemsInCart.filter(item => item.id != id);
+        return newCart;
+
+    })
+  };
+
   const totalCost = itemsInCart.reduce(
     (acc, item) => acc + item.price * item.quantity,
     0
@@ -38,7 +59,6 @@ export default function App() {
     <div id="shop" className="App">
       <header className="App-header">
         <img src={shopRoxy} className="shop-logo" alt="logo" />
-        {/* <h1 className="App-header-text">"Give the Gift of Roxy"</h1> */}
       </header>
       <main className="App-shop">
         <div className="App-products">
@@ -51,7 +71,7 @@ export default function App() {
             />
           ))}
         </div>
-        <Cart itemsInCart={itemsInCart} totalCost={totalCost} />
+        <Cart itemsInCart={itemsInCart} totalCost={totalCost} remove={handleRemoveFromCart}/>
         {itemsInCart.length > 0 && (
         <StripeProvider apiKey="pk_test_sRKoW6QEQ6KG9lTUr0PUO88m00oAuLK0on">
             <Elements>

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { CardElement, injectStripe } from 'react-stripe-elements';
-//import './CheckoutForm.css';
 
 function CheckoutForm({ stripe, totalCost }) {
   const [status, setStatus] = useState('default');

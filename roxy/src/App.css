@@ -382,7 +382,10 @@ h3 {
   flex: 1 1 50%;
 }
 #shop .CartItem-quantity {
-  padding: 0 1rem;
+  padding: 0 0.5rem;
+}
+#shop .delete-item {
+  color: #642830;
 }
 #shop .CheckoutForm {
   border-top: 1px solid #eee;

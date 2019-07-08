@@ -6,6 +6,7 @@ import OpenForMusic from './OpenForMusic/OpenForMusic';
 import Calendars from './Calendars/Calendars';
 import FoodMenu from './FoodMenu/FoodMenu';
 import Contact from './Contact/Contact';
+import Shop from './Shop/Shop';
 
 
 
@@ -19,6 +20,7 @@ function App() {
         <Calendars/>
         <FoodMenu/>
         <Contact/>
+        <Shop/>
 
     </div>
   );

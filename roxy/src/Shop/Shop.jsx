@@ -4,6 +4,7 @@ import items from '../Api/api';
 import Product from './Product/Product';
 import Cart from './Cart/Cart';
 import CheckoutForm from './CheckoutForm/CheckoutForm';
+import shopRoxy from '../images/shop_roxy.png';
 // import logo from './logo.svg';
 // import './App.css';
 
@@ -36,8 +37,8 @@ export default function App() {
   return (
     <div id="shop" className="App">
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <h1 className="App-header-text">Give the Gift of Roxy</h1>
+        <img src={shopRoxy} className="shop-logo" alt="logo" />
+        {/* <h1 className="App-header-text">"Give the Gift of Roxy"</h1> */}
       </header>
       <main className="App-shop">
         <div className="App-products">

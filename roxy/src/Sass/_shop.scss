@@ -1,13 +1,13 @@
 #shop {
 
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 32px;
+  .shop-logo {
+    
+    height: 60%;
   }
   
   .App-header {
-    background-color: #282c34;
-    height: 100px;
+    background-color: #212121;
+    height: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,6 +50,10 @@
     border: 1px solid #eee;
     margin: 1rem 0;
     padding: 1rem;
+
+    img {
+      height: 130px;
+    }
   }
   
   @media (min-width: 800px) {
@@ -78,7 +82,7 @@
     font-weight: 600;
     line-height: 1;
     text-align: center;
-    background-color: #61dafb;
+    background-color: #212121;
     color: #fff;
     cursor: pointer;
     transition-property: background-color, color;
@@ -89,7 +93,7 @@
   
   .Product-buy-button:hover,
   .Product-buy-button:focus {
-    background-color: #47b8d7;
+    background-color: #212121bd;
   }
 
   .Cart {
@@ -135,7 +139,7 @@
   }
   
   .CheckoutForm-complete {
-    color: #7fdc45;
+    color: #642930;
     font-weight: 700;
     text-align: center;
   }
@@ -151,7 +155,7 @@
     font-weight: 600;
     line-height: 1;
     text-align: center;
-    background-color: #7fdc45;
+    background-color: #642930;
     color: #fff;
     cursor: pointer;
     transition-property: background-color, color;
@@ -162,7 +166,7 @@
   
   .CheckoutForm-button:hover,
   .CheckoutForm-button:focus {
-    background-color: #68b637;
+    background-color: #642930da;
   }
   
   .CheckoutForm-button:disabled {

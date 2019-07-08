@@ -99,6 +99,9 @@
   background-color: gray;
 }
 
+#drinks, #brunch, #smallPlates {
+  padding-bottom: 100px;
+}
 #drinks h3, #brunch h3, #smallPlates h3 {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.048);
@@ -120,6 +123,8 @@
   color: white;
   background-image: url("images/typewriter.jpeg");
   background-size: cover;
+  padding-bottom: 100px;
+  padding-top: 1px;
 }
 #contact h2 {
   text-align: center;
@@ -270,13 +275,12 @@ h3 {
     margin: 5px 5px 5px 9px !important;
   }
 }
-#shop .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 32px;
+#shop .shop-logo {
+  height: 60%;
 }
 #shop .App-header {
-  background-color: #282c34;
-  height: 100px;
+  background-color: #212121;
+  height: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -314,6 +318,9 @@ h3 {
   margin: 1rem 0;
   padding: 1rem;
 }
+#shop .Product img {
+  height: 130px;
+}
 @media (min-width: 800px) {
   #shop .Product {
     margin: 0 1rem;
@@ -337,7 +344,7 @@ h3 {
   font-weight: 600;
   line-height: 1;
   text-align: center;
-  background-color: #61dafb;
+  background-color: #212121;
   color: #fff;
   cursor: pointer;
   transition-property: background-color, color;
@@ -347,7 +354,7 @@ h3 {
 }
 #shop .Product-buy-button:hover,
 #shop .Product-buy-button:focus {
-  background-color: #47b8d7;
+  background-color: #212121bd;
 }
 #shop .Cart {
   border-top: 1px solid #eee;
@@ -385,7 +392,7 @@ h3 {
   text-align: center;
 }
 #shop .CheckoutForm-complete {
-  color: #7fdc45;
+  color: #642930;
   font-weight: 700;
   text-align: center;
 }
@@ -400,7 +407,7 @@ h3 {
   font-weight: 600;
   line-height: 1;
   text-align: center;
-  background-color: #7fdc45;
+  background-color: #642930;
   color: #fff;
   cursor: pointer;
   transition-property: background-color, color;
@@ -410,7 +417,7 @@ h3 {
 }
 #shop .CheckoutForm-button:hover,
 #shop .CheckoutForm-button:focus {
-  background-color: #68b637;
+  background-color: #642930da;
 }
 #shop .CheckoutForm-button:disabled {
   background-color: #ccc;

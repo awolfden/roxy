@@ -37,6 +37,12 @@ function CheckoutForm({ stripe, totalCost }) {
   return (
     <form className="CheckoutForm" onSubmit={submit}>
       <h4>Would you like to complete the purchase?</h4>
+      <input className="checkout-input" type="text" placeholder="name"/><br/>
+      <input className="checkout-input" type="text" placeholder="address"/><br/>
+      <input className="checkout-city" type="text" placeholder="city"/>
+      <input className="checkout-state" type="text" placeholder="state"/>
+      <input className="checkout-zip" type="text" placeholder="zip code"/><br/>
+      <input className="checkout-input" type="text" placeholder="email"/>
       <CardElement />
       <button
         className="CheckoutForm-button"

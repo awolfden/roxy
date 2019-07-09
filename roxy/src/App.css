@@ -439,6 +439,50 @@ h3 {
   outline: 0;
   background: white;
 }
+#shop .checkout-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 16px;
+  margin: 8px;
+  font-size: 1rem;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  outline: 0;
+  background: white;
+}
+#shop .checkout-city {
+  width: 50%;
+  max-width: 242px;
+  padding: 12px 16px;
+  margin: 8px;
+  font-size: 1rem;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  outline: 0;
+  background: white;
+}
+#shop .checkout-state {
+  width: 10%;
+  max-width: 75px;
+  padding: 12px 16px;
+  margin: 8px;
+  font-size: 1rem;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  outline: 0;
+  background: white;
+}
+#shop .checkout-zip {
+  width: 40%;
+  max-width: 150px;
+  padding: 12px 16px;
+  margin: 8px;
+  font-size: 1rem;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  outline: 0;
+  background: white;
+}
 
 * {
   font-family: "Lato", sans-serif !important;

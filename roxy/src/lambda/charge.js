@@ -7,6 +7,7 @@ exports.handler = (event, context, callback) => {
   }
 
   const data = JSON.parse(event.body);
+  console.log(data);
 
   if (!data.token || parseInt(data.amount) < 1) {
     return callback(null, {

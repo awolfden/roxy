@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import contactRoxy from '../images/contact-roxy-logo.png';
 
 class Contact extends Component {
     constructor(){
@@ -38,7 +39,6 @@ class Contact extends Component {
         const barLocations = this.state.locations.map((bar, index) => {
             return(
                 <div key={index} id={index}>
-                    
                     <div className='flexContainer'>
                         <div className='info'>
                             <a href={bar.website} target="_blank" rel="noopener noreferrer"><h3>{bar.city}</h3></a>
@@ -57,7 +57,9 @@ class Contact extends Component {
 
         return(
             <div id="contact" className="contact">
-                <h2>Contact Us</h2>
+                <header className="App-header">
+                        <img src={contactRoxy} className="shop-logo" alt="logo" />
+                </header>
                 <div className='flexColumn'>
                     {barLocations}
                 </div>

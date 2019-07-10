@@ -95,6 +95,20 @@
   text-align: center;
 }
 
+#menu header {
+  background-color: #212121;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+#menu img {
+  height: 60%;
+}
+
 #foodmenu {
   background-color: gray;
 }
@@ -125,6 +139,19 @@
   background-size: cover;
   padding-bottom: 100px;
   padding-top: 1px;
+}
+#contact header {
+  background-color: #212121;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+#contact img {
+  height: 60%;
 }
 #contact h2 {
   text-align: center;
@@ -173,8 +200,22 @@ h3 {
 .musicEventDiv {
   margin: 10px;
   padding: 10px;
-  background-color: #4C7498;
-  border: 2px solid #265985;
+  background-color: gray;
+  border: 2px solid rgba(75, 73, 73, 0.5);
+  border-radius: 10px;
+  color: white;
+  width: 50%;
+  position: relative;
+  bottom: 500px;
+  z-index: 100;
+  box-shadow: 3px 3px #c4c2c236;
+}
+
+.eventEventDiv {
+  margin: 10px;
+  padding: 10px;
+  background-color: gray;
+  border: 2px solid black;
   border-radius: 10px;
   color: white;
   width: 50%;
@@ -183,17 +224,12 @@ h3 {
   z-index: 100;
 }
 
-.eventEventDiv {
-  margin: 10px;
-  padding: 10px;
-  background-color: #4C7498;
-  border: 2px solid #265985;
-  border-radius: 10px;
-  color: white;
-  width: 50%;
-  position: relative;
-  bottom: 500px;
-  z-index: 100;
+div.rbc-event, div.rbc-event.rbc-selected {
+  background-color: gray;
+}
+
+div.rbc-event {
+  background-color: gray;
 }
 
 @media only screen and (max-width: 400px) {

@@ -6,6 +6,7 @@ import Tab from '@material-ui/core/Tab';
 import Drinks from './Drinks/Drinks';
 import SmallPlates from './SmallPlates/SmallPlates';
 import Brunch from './Brunch/Brunch';
+import menuRoxy from '../images/menu-roxy-logo.png';
 
 
 
@@ -44,6 +45,9 @@ export default function CenteredTabs() {
    
   return (
     <div id="menu">
+      <header className="App-header">
+        <img src={menuRoxy} className="shop-logo" alt="logo" />
+      </header>
         <Paper className={classes.root}>
             <Tabs
                 value={value}

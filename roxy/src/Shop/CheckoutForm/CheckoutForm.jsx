@@ -12,7 +12,7 @@ function CheckoutForm({ stripe, totalCost }) {
         "state": null
       },
       "email": null,
-      "name": "Adam Wolfman"    
+      "name": null    
   }
 
   const setDetails = (e) => {
@@ -76,12 +76,12 @@ function CheckoutForm({ stripe, totalCost }) {
   return (
     <form className="CheckoutForm" onSubmit={submit}>
       <h4>Would you like to complete the purchase?</h4>
-      <input className="checkout-input" type="text" placeholder="name" onChange={setDetails}/><br/>
-      <input className="checkout-input" type="text" placeholder="address" onChange={setDetails}/><br/>
-      <input className="checkout-city" type="text" placeholder="city" onChange={setDetails}/>
-      <input className="checkout-state" type="text" placeholder="state" onChange={setDetails}/>
-      <input className="checkout-zip" type="text" placeholder="zip code" onChange={setDetails}/><br/>
-      <input className="checkout-input" type="text" placeholder="email" onChange={setDetails}/>
+      <input className="checkout-input" type="text" placeholder="name" required onChange={setDetails}/><br/>
+      <input className="checkout-input" type="text" placeholder="address" required onChange={setDetails}/><br/>
+      <input className="checkout-city" type="text" placeholder="city" required onChange={setDetails}/>
+      <input className="checkout-state" type="text" placeholder="state" required onChange={setDetails}/>
+      <input className="checkout-zip" type="text" placeholder="zip code" required onChange={setDetails}/><br/>
+      <input className="checkout-input" type="text" placeholder="email" required onChange={setDetails}/>
       <CardElement />
       <button
         className="CheckoutForm-button"

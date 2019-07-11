@@ -24,7 +24,7 @@ export default function App() {
       }
 
       // otherwise, add new item to cart
-      const item = items.find(item => item.id === id);
+      const item = items.find(item => item.id.toString().toLowerCase() === id.toString().toLowerCase());
       return [...itemsInCart, { ...item, quantity: 1 }];
     });
   };
@@ -34,17 +34,17 @@ export default function App() {
     const id = e.target.id;
 
     setItemsInCart(itemsInCart => {
-        const itemToRemove = itemsInCart.find(item => item.id == id);
+        const itemToRemove = itemsInCart.find(item => item.id.toString().toLowerCase() === id.toString().toLowerCase());
         //if item is already in cart, update the quantity
         if (itemToRemove.quantity > 1) {
             return itemsInCart.map(item => {
-            if (item.id != id) return item;
+            if (item.id.toString().toLowerCase() !== id.toString().toLowerCase()) return item;
             return { ...item, quantity: item.quantity - 1 };
             });
         }
   
         // //otherwise, remove item from cart
-        const newCart = itemsInCart.filter(item => item.id != id);
+        const newCart = itemsInCart.filter(item => item.id.toString().toLowerCase() !== id.toString().toLowerCase());
         return newCart;
 
     })

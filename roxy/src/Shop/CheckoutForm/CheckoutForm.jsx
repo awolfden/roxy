@@ -31,7 +31,7 @@ function CheckoutForm({ stripe, totalCost }) {
     }
     
     // custName = e.target.value;
-    console.log(billing_details);
+    //console.log(billing_details);
   }
 
   const submit = async e => {
@@ -45,7 +45,6 @@ function CheckoutForm({ stripe, totalCost }) {
           "address_line1": billing_details.address.line1,
           "address_zip": billing_details.address.postal_code,
           "address_state": billing_details.address.state,
-          "metadata": {"email": billing_details.email},
           "name": billing_details.name   
       });
 
@@ -54,6 +53,7 @@ function CheckoutForm({ stripe, totalCost }) {
         body: JSON.stringify({
           amount: totalCost * 100,
           token: token.id,
+          email: billing_details.email
         }),
       });
 

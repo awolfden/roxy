@@ -24,6 +24,8 @@ exports.handler = (event, context, callback) => {
       currency: 'usd',
       description: 'Roxy shop',
       source: data.token,
+      receipt_email: data.email,
+      metadata: {"email": data.email}
     })
     .then(({ status }) => {
       return callback(null, {

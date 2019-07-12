@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { CardElement, injectStripe } from 'react-stripe-elements';
 
-function CheckoutForm({ stripe, totalCost }) {
+function CheckoutForm({ stripe, totalCost, metaData }) {
   const [status, setStatus] = useState('default');
-
+  console.log(metaData);
   let billing_details = {
       "address": {
         "city": null,
@@ -53,7 +53,8 @@ function CheckoutForm({ stripe, totalCost }) {
         body: JSON.stringify({
           amount: totalCost * 100,
           token: token.id,
-          email: billing_details.email
+          email: billing_details.email,
+          metaData: metaData
         }),
       });
 

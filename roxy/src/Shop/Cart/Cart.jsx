@@ -16,6 +16,7 @@ export default function Cart({ itemsInCart, totalCost, remove }) {
               cost={item.price * item.quantity}
               quantity={item.quantity}
               remove={remove}
+              
             />
           ))}
           <div className="Cart-total-cost">

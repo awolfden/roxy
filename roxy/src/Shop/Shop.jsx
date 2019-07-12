@@ -25,7 +25,9 @@ export default function App() {
 
       // otherwise, add new item to cart
       const item = items.find(item => item.id.toString().toLowerCase() === id.toString().toLowerCase());
+      
       return [...itemsInCart, { ...item, quantity: 1 }];
+      
     });
   };
 
@@ -45,6 +47,7 @@ export default function App() {
   
         // //otherwise, remove item from cart
         const newCart = itemsInCart.filter(item => item.id.toString().toLowerCase() !== id.toString().toLowerCase());
+        console.log(newCart);
         return newCart;
 
     })
@@ -54,6 +57,20 @@ export default function App() {
     (acc, item) => acc + item.price * item.quantity,
     0
   );
+
+  
+  let mapMetaData = itemsInCart.map((item) => {
+    const newPair = item.price + ' ' + item.title + ' : ' + item.quantity;
+    return newPair;
+  });
+
+  let metaData = '';
+  mapMetaData.forEach((item) => {
+    metaData = metaData !== '' ? metaData = metaData + ', $' + item.toString() : metaData = '$' + item.toString();
+  })
+
+
+  console.log(metaData);
 
   return (
     <div id="shop" className="App">
@@ -65,9 +82,11 @@ export default function App() {
           {items.map(item => (
             <Product
               key={item.id}
+              id={item.id}
               title={item.title}
               price={item.price}
               onAddToCartClick={() => handleAddToCartClick(item.id)}
+              
             />
           ))}
         </div>
@@ -75,7 +94,7 @@ export default function App() {
         {itemsInCart.length > 0 && (
         <StripeProvider apiKey="pk_test_sRKoW6QEQ6KG9lTUr0PUO88m00oAuLK0on">
             <Elements>
-            <CheckoutForm totalCost={totalCost} />
+            <CheckoutForm totalCost={totalCost} metaData={metaData}/>
             </Elements>
         </StripeProvider>
         )}

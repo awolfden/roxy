@@ -20,7 +20,7 @@ function App() {
         <Calendars/>
         <FoodMenu/>
         <Contact/>
-        <Shop/>
+        {/* <Shop/> */}
 
     </div>
   );

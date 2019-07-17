@@ -42,7 +42,7 @@ export default function HideAppBar(props) {
               <Typography variant="h6"><a href="#calendars" style={{ textDecoration: 'none' }}>Calendar</a></Typography>
               <Typography variant="h6"><a href="#menu" style={{ textDecoration: 'none' }}>Menu</a></Typography>
               <Typography variant="h6"><a href="#contact" style={{ textDecoration: 'none' }}>Contact</a></Typography>
-              <Typography variant="h6"><a href="#shop" style={{ textDecoration: 'none' }}>Shop</a></Typography>
+              {/* <Typography variant="h6"><a href="#shop" style={{ textDecoration: 'none' }}>Shop</a></Typography> */}
             
           </Toolbar>
         </AppBar>

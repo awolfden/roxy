@@ -8,6 +8,7 @@
 @import './calendar';
 @import './mediaQueries';
 @import './shop';
+@import './loader';
 
 * {
     font-family: 'Lato', sans-serif !important;
@@ -15,4 +16,5 @@
 
 html {
     scroll-behavior: smooth;
+    
 }

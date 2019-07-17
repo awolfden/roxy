@@ -526,6 +526,35 @@ div.rbc-event {
   background: white;
 }
 
+#loader {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+}
+#loader svg {
+  height: 70%;
+  margin-top: 125px;
+}
+#loader .orb path {
+  color: gray;
+  stroke: gray;
+  fill: gray;
+  animation: loader;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: forwards;
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: 50% 50%;
+  }
+}
+
 * {
   font-family: "Lato", sans-serif !important;
 }

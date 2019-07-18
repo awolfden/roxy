@@ -13,7 +13,7 @@
 
 #home {
   height: 800px;
-  background-image: url("./images/gramophone_small.jpg");
+  background-image: url("./images/gramophone_small.png");
   background-position: right top;
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -303,17 +303,32 @@ div.rbc-event {
     width: 95%;
     margin: 20px 10px;
   }
+
+  #loader svg {
+    margin-top: 0px !important;
+    padding: 75px !important;
+  }
 }
 @media only screen and (max-width: 360px) {
   #navigation a {
     font-size: 12px;
     margin: 5px 5px 5px 18px !important;
   }
+
+  #loader svg {
+    margin-top: 0px !important;
+    padding: 75px !important;
+  }
 }
 @media only screen and (max-width: 320px) {
   #navigation a {
     font-size: 12px;
     margin: 5px 5px 5px 9px !important;
+  }
+
+  #loader svg {
+    margin-top: 0px !important;
+    padding: 75px !important;
   }
 }
 #shop .shop-logo {

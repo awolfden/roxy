@@ -13,7 +13,7 @@
 
 #home {
   height: 800px;
-  background-image: url("./images/gramophone_small.png");
+  background-image: url("./images/gramophone_small.jpg");
   background-position: right top;
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -32,7 +32,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#a6000000", endColorstr="#00000000",GradientType=1 );
   border-radius: 15px;
   animation: draw;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-iteration-count: 1;
   animation-direction: forwards;
   animation-fill-mode: normal;
@@ -54,12 +54,11 @@
 @keyframes draw {
   0% {
     fill-opacity: 0;
-  }
-  50% {
-    fill-opacity: 0.5;
+    stroke-opacity: 0;
   }
   100% {
     fill-opacity: 1;
+    stroke-opacity: 1;
   }
 }
 
@@ -533,25 +532,38 @@ div.rbc-event {
 }
 #loader svg {
   height: 70%;
-  margin-top: 125px;
+  margin-top: 50px;
+  padding: 150px;
+  animation: loaderFadeOut;
+  animation-duration: 4.5s;
+  animation-iteration-count: 1;
+  animation-direction: forwards;
 }
 #loader .orb path {
   color: gray;
   stroke: gray;
   fill: gray;
   animation: loader;
-  animation-duration: 1.5s;
+  animation-duration: 1.4s;
   animation-iteration-count: infinite;
   animation-direction: forwards;
 }
 @keyframes loader {
   0% {
     transform: rotate(0deg);
-    transform-origin: 50% 50%;
+    transform-origin: 59.2px 59.2px;
   }
   100% {
     transform: rotate(360deg);
-    transform-origin: 50% 50%;
+    transform-origin: 59.2px 59.2px;
+  }
+}
+@keyframes loaderFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 

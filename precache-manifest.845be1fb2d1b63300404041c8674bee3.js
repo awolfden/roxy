@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b118257b4b5394a0127fcea2a26979ca",
+    "revision": "0a9fc490c711bdf010ab7aded98f3577",
     "url": "/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.48adc591.chunk.css"
   },
   {
-    "revision": "e4e773aa78505598a87d",
-    "url": "/static/css/main.a6626b0a.chunk.css"
+    "revision": "2ae4a56b344ab0a0b461",
+    "url": "/static/css/main.38b6a6a6.chunk.css"
   },
   {
     "revision": "deff67f97f87c114fd91",
     "url": "/static/js/2.85b76036.chunk.js"
   },
   {
-    "revision": "e4e773aa78505598a87d",
-    "url": "/static/js/main.0801102a.chunk.js"
+    "revision": "2ae4a56b344ab0a0b461",
+    "url": "/static/js/main.b0a1b550.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/gramophone_logo_white.cf59c5b7.png"
   },
   {
-    "revision": "5bd805eeadddadbd7d5696b702bce5d8",
-    "url": "/static/media/gramophone_small.5bd805ee.jpg"
+    "revision": "2c580f423ac518b10efd5fe46e761096",
+    "url": "/static/media/gramophone_small.2c580f42.png"
   },
   {
     "revision": "798d901296cf3600998e0722c48497f9",

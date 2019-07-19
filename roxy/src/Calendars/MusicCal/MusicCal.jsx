@@ -49,7 +49,7 @@ class MusicCal extends Component {
       //console.log(parsedResponse);
 
       const eventsArray = parsedResponse.items.map((event) => {
-        console.log(event.status);
+        //console.log(event.status);
         if(event.status !== "confirmed"){
           return null;
         }
@@ -89,7 +89,7 @@ class MusicCal extends Component {
         }
       });
 
-      console.log(eventsArray);
+      //console.log(eventsArray);
       this.setState({
         cal_events: eventsArray
       })

@@ -49,10 +49,18 @@ class MusicCal extends Component {
       //console.log(parsedResponse);
 
       const eventsArray = parsedResponse.items.map((event) => {
+        console.log(event.status);
+        if(event.status !== "confirmed"){
+          return null;
+        }
         
+        let dateStart = event.start.dateTime ? this.convertDate(event.start.dateTime).toISOString() : console.log(event);        
+        //console.log(dateStart);
+        let dateEnd = this.convertDate(event.end.dateTime).toISOString();
+        //console.log(dateEnd);
+
         if (event.start.dateTime){
-          let dateStart = this.convertDate(event.start.dateTime);
-          let dateEnd = this.convertDate(event.end.dateTime);
+          
           return(
             {
               "title": event.summary,
@@ -81,13 +89,14 @@ class MusicCal extends Component {
         }
       });
 
-      //console.log(eventsArray);
+      console.log(eventsArray);
       this.setState({
         cal_events: eventsArray
       })
 
     } catch (error){
       console.log(error);
+      
     }
 
   }

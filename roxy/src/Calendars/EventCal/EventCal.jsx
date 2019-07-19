@@ -51,10 +51,14 @@ class EventCal extends Component {
       //console.log(parsedResponse);
 
       const eventsArray = parsedResponse.items.map((event) => {
-        
+        if(event.status !== "confirmed"){
+          return null;
+        }
+
+        console.log(event);
         if (event.start.dateTime){
-          let dateStart = this.convertDate(event.start.dateTime);
-          let dateEnd = this.convertDate(event.end.dateTime);
+          let dateStart = event.start.dateTime ? this.convertDate(event.start.dateTime) : this.convertDate(event.start.date);
+          let dateEnd = event.end.dateTime ? this.convertDate(event.end.dateTime) : this.convertDate(event.end.date);
           return(
             {
               "title": event.summary,
@@ -66,8 +70,8 @@ class EventCal extends Component {
             }
           )
         } else if (event.start.date){
-          let dateStart = this.convertDate(event.start.date);
-          //let dateEnd = this.convertDate(event.end.date);
+          let dateStart = event.start.dateTime ? this.convertDate(event.start.dateTime.toString).toISOString() : this.convertDate(event.originalStartTime.dateTime).toISOString();
+          //let dateEnd = this.convertDate(event.end.date).toISOString();
           return(
             {
               "title": event.summary,
@@ -117,7 +121,7 @@ class EventCal extends Component {
         <div className="App calendar">
           <header className="App-header">
 
-            <h2 className="App-title" id="eventcal">Event Calendar</h2>
+            <h2 className="App-title" id="eventcal">Events & Specials</h2>
           </header>
           <div style={{ height: 700 }}>
             <Calendar

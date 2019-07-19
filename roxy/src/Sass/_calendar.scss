@@ -55,6 +55,11 @@ div.rbc-event, div.rbc-event.rbc-selected {
 
 div.rbc-event {
     background-color: gray;
+    font-size: 11px;
+}
+
+.rbc-toolbar span.rbc-toolbar-label {
+    text-align: right;
 }
 
 @media only screen and (max-width: 400px) {

@@ -235,6 +235,11 @@ div.rbc-event, div.rbc-event.rbc-selected {
 
 div.rbc-event {
   background-color: gray;
+  font-size: 11px;
+}
+
+.rbc-toolbar span.rbc-toolbar-label {
+  text-align: right;
 }
 
 @media only screen and (max-width: 400px) {
@@ -307,6 +312,16 @@ div.rbc-event {
   #loader svg {
     margin-top: 50px !important;
     padding: 75px !important;
+  }
+
+  div.musicEventDiv {
+    position: relative;
+    bottom: 600px !important;
+  }
+
+  div.eventEventDiv {
+    position: relative;
+    bottom: 600px !important;
   }
 }
 @media only screen and (max-width: 360px) {

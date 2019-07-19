@@ -76,7 +76,15 @@
         }
     }
 
+    div.musicEventDiv {
+        position: relative;
+        bottom: 600px !important;
+    }
 
+    div.eventEventDiv {
+        position: relative;
+        bottom: 600px !important;
+    }
 }
 
 @media only screen and (max-width: 360px) {

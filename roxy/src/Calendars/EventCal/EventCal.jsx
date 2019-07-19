@@ -55,7 +55,7 @@ class EventCal extends Component {
           return null;
         }
 
-        console.log(event);
+        //console.log(event);
         if (event.start.dateTime){
           let dateStart = event.start.dateTime ? this.convertDate(event.start.dateTime) : this.convertDate(event.start.date);
           let dateEnd = event.end.dateTime ? this.convertDate(event.end.dateTime) : this.convertDate(event.end.date);
@@ -71,12 +71,12 @@ class EventCal extends Component {
           )
         } else if (event.start.date){
           let dateStart = event.start.dateTime ? this.convertDate(event.start.dateTime.toString).toISOString() : this.convertDate(event.originalStartTime.dateTime).toISOString();
-          //let dateEnd = this.convertDate(event.end.date).toISOString();
+          let dateEnd = this.convertDate(event.end.date).toISOString();
           return(
             {
               "title": event.summary,
               "start": dateStart,
-              "end": dateStart,
+              "end": dateEnd,
               "description" : event.description,
               "allDay?": false,
               "resource?": null
@@ -86,7 +86,7 @@ class EventCal extends Component {
           return(console.log("error"));
         }
       });
-      console.log(eventsArray);
+      //console.log(eventsArray);
       this.setState({
         cal_events: eventsArray
       })

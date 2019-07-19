@@ -1,11 +1,7 @@
 #navigation a {
   color: white;
   text-decoration: none;
-  decoration: none;
   margin: 20px;
-}
-#navigation a:hover {
-  color: grey;
 }
 #navigation img {
   height: 30px;

@@ -176,6 +176,19 @@
   top: 43px;
   margin-left: 10px;
 }
+#contact button {
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.384);
+  margin-top: 20px;
+  padding: 5px;
+  width: 60%;
+  font-size: 14px;
+  background-color: #FFFFFF;
+}
+#contact button:hover {
+  border: 2px solid #212121;
+  background-color: #e0e0dd;
+}
 
 #calendars .calendar {
   margin: 0px 40px 70px 40px;
@@ -591,6 +604,36 @@ div.rbc-event {
   100% {
     opacity: 0;
   }
+}
+
+#insta .App-header {
+  background-color: #212121;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+#insta img {
+  height: 60%;
+}
+
+#instagramFeed {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#instagramFeed div.posts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#instagramFeed img {
+  width: 350px;
+  height: 350px;
+  padding: 5px;
 }
 
 * {

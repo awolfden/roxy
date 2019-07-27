@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-//import Video from '../images/record_player_004.mp4';
+
 
 class Home extends Component {
 
@@ -7,10 +7,7 @@ class Home extends Component {
     render(){
         return(
             <div id="home">
-                {/* <video style={{position: "absolute", opacity: .3, zIndex: 0, height: "100%", maxWidth: "100%"}}id="background-video" loop autoPlay>
-                    <source src={Video} type="video/mp4" />
-                    <source src={Video} type="video/ogg" />
-                </video> */}
+
                 <div className="flexContainer" style={{zIndex: 50}}>
                     <svg id="roxylogo" xmlns="http://www.w3.org/2000/svg" width="344.844" height="188.412">
                     <g className="est1978" data-name="Layer 4" fill="#fff" stroke="#fff" strokeMiterlimit="10">

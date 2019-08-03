@@ -82,5 +82,14 @@ div.rbc-event {
         div.rbc-calendar{
             height: 300px !important;
         }
+
+        div.rbc-month-view {
+            height: 385px;
+        }
+
+        div.rbc-month-row, div.rbc-row-bg, div.rbc-row-content {
+            height: 75px;
+        }
     }
+    
 }

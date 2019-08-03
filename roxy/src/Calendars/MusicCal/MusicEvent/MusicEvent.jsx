@@ -15,7 +15,7 @@ class MusicEvent extends Component {
             <div className="flexContainer">
                 <div className="musicEventDiv">
                     <h1>{this.props.event.title}</h1>
-                    <h1>{`${stringTime} ${newTime}`}</h1>
+                    <h1>{`${newTime}`}</h1>
                     <h1>{this.props.event.description}</h1>
                 </div>
             </div>

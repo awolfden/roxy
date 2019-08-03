@@ -57,8 +57,11 @@ class EventCal extends Component {
 
         //console.log(event);
         if (event.start.dateTime){
-          let dateStart = event.start.dateTime ? this.convertDate(event.start.dateTime) : this.convertDate(event.start.date);
-          let dateEnd = event.end.dateTime ? this.convertDate(event.end.dateTime) : this.convertDate(event.end.date);
+          
+          let dateStart = event.start.dateTime ? this.convertDate(event.start.dateTime).toISOString() : console.log(event);        
+          //console.log(dateStart);
+          let dateEnd = this.convertDate(event.end.dateTime).toISOString();
+          //console.log(dateEnd);
           return(
             {
               "title": event.summary,
@@ -134,6 +137,7 @@ class EventCal extends Component {
               onSelectEvent={(e) => {
                 this.showEvent(e);
               }}
+              popup={{default: false}}
             />
           </div>
         </div>

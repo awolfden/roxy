@@ -66,8 +66,10 @@ div.rbc-event {
     #calendars {
         height: 500px;
         div.App.calendar:nth-child(2) div.rbc-calendar{
-            height: 300px !important;
+            height: 420px !important;
         }
+
+
     }
 }
 
@@ -80,7 +82,7 @@ div.rbc-event {
         }
         
         div.rbc-calendar{
-            height: 300px !important;
+            height: 420px !important;
         }
 
         div.rbc-month-view {

@@ -17,6 +17,7 @@ import moment from 'moment';
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import '../../App.css';
 
+
 const localizer = momentLocalizer(moment);
 
 class MusicCal extends Component {
@@ -145,6 +146,7 @@ class MusicCal extends Component {
               onSelectEvent={(e) => {
                 this.showEvent(e);
               }}
+              popup= {{default: false}}
             />
           </div>
         </div>

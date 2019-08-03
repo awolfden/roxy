@@ -6,10 +6,10 @@ class MusicEvent extends Component {
 
     render(){
         const time = this.props.event.start.toString();
-        const stringTime = time.slice(0, 15);
+        //const stringTime = time.slice(0, 15);
         let newTime = moment(time).format("hh:mm:ss a");
-        newTime = newTime.slice(0, 5) + ' ' + newTime.slice(8);
-        console.log(newTime);
+        newTime = newTime[0] != 0 ? newTime.slice(0, 5) + ' ' + newTime.slice(8) : newTime.slice(1, 5) + ' ' + newTime.slice(8);
+        //console.log(newTime);
         
         return(
             <div className="flexContainer">

@@ -18,6 +18,10 @@
   flex-direction: column;
   justify-content: center;
 }
+#home a {
+  text-decoration: none;
+  color: white;
+}
 #home #roxylogo {
   background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 46%, rgba(0, 0, 0, 0) 100%);
   /* FF3.6-15 */
@@ -114,24 +118,32 @@
   background-color: gray;
 }
 
-#drinks, #brunch, #smallPlates {
+#drinks, #brunch, #smallPlates, #saladItems, #sandwichItems {
   padding-bottom: 100px;
 }
-#drinks h3, #brunch h3, #smallPlates h3 {
+#drinks h3, #brunch h3, #smallPlates h3, #saladItems h3, #sandwichItems h3 {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.048);
 }
-#drinks .cocktailList, #drinks .brunchList, #drinks .plateList, #brunch .cocktailList, #brunch .brunchList, #brunch .plateList, #smallPlates .cocktailList, #smallPlates .brunchList, #smallPlates .plateList {
+#drinks .cocktailList, #drinks .brunchList, #drinks .plateList, #drinks .saladList, #drinks .sandwichList, #brunch .cocktailList, #brunch .brunchList, #brunch .plateList, #brunch .saladList, #brunch .sandwichList, #smallPlates .cocktailList, #smallPlates .brunchList, #smallPlates .plateList, #smallPlates .saladList, #smallPlates .sandwichList, #saladItems .cocktailList, #saladItems .brunchList, #saladItems .plateList, #saladItems .saladList, #saladItems .sandwichList, #sandwichItems .cocktailList, #sandwichItems .brunchList, #sandwichItems .plateList, #sandwichItems .saladList, #sandwichItems .sandwichList {
   margin: auto 250px;
 }
-#drinks p, #brunch p, #smallPlates p {
+#drinks p, #brunch p, #smallPlates p, #saladItems p, #sandwichItems p {
   font-size: 22px;
   margin-bottom: -5px;
 }
-#drinks span, #brunch span, #smallPlates span {
+#drinks span, #brunch span, #smallPlates span, #saladItems span, #sandwichItems span {
   font-size: 13px;
   color: gray;
   font-style: italic;
+}
+
+#brunch div.brunchList {
+  display: flex;
+  justify-content: center;
+}
+#brunch div.brunchList img {
+  opacity: 0.3;
 }
 
 #contact {
@@ -261,19 +273,22 @@ div.rbc-event {
 }
 @media only screen and (max-width: 411px) {
   #calendars {
-    height: 500px;
+    height: 660px;
   }
   #calendars div.App.calendar {
-    height: 700px;
+    height: 800px;
   }
   #calendars div.rbc-calendar {
-    height: 420px !important;
+    height: 540px !important;
   }
   #calendars div.rbc-month-view {
-    height: 385px;
+    height: 540px;
   }
   #calendars div.rbc-month-row, #calendars div.rbc-row-bg, #calendars div.rbc-row-content {
-    height: 75px;
+    height: 300px;
+  }
+  #calendars .rbc-toolbar button {
+    padding: 0.375rem 0.5rem !important;
   }
 }
 @media only screen and (max-width: 425px) {

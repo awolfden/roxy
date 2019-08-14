@@ -26,7 +26,7 @@ class Drinks extends Component {
                 {'name': 'The eluM',
                  'description': 'Absolute Elyx vodka, lemon, lime, and grapefruit juice, Unity Vibration ginger kombucha beer'},
                 {'name': 'La Paloma',
-                 'description': 'Lunazul blanco tequila, pamplemousse, fresh grapefruit juice'},
+                 'description': 'Mi Campo blanco tequila, pamplemousse, fresh grapefruit juice'},
                 {'name': 'Cuban Mojito',
                  'description': 'Myers Platinum White rum, fresh mint, lime juice'},
                 {'name': 'Kitchen Round',

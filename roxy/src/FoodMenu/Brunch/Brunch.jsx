@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import brunchImage from '../../images/champagne.png';
 
 class Brunch extends Component {
     constructor(){
@@ -27,9 +28,10 @@ class Brunch extends Component {
     
         return(
             <div id="brunch">
-                <h3>Brunch</h3>
+                <h3>Brunch Coming Soon!</h3>
                 <div className="brunchList">
-                    {showBrunchItems}
+                    {/* {showBrunchItems} */}
+                    <img src={brunchImage} alt="champagne glasses clinking"/>
                 </div>
             </div>
         )

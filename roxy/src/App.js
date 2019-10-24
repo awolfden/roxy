@@ -9,6 +9,8 @@ import Contact from './Contact/Contact';
 import Shop from './Shop/Shop';
 import Loader from './Loader/Loader';
 import InstagramFeed from './InstagramFeed/InstagramFeed';
+import EmailCapture from './EmailCapture/EmailCapture';
+
 
 
 class App extends Component {
@@ -31,12 +33,17 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-          
-          
+        
+         
+         
+
          {this.state.showLoader ? <Loader/> : null}
+
+
          {this.state.showLoader ? null : <Navigation/>}
          {this.state.showLoader ? null : <Home/>}
          {this.state.showLoader ? null : <OpenForMusic/>}
+         {this.state.showLoader ? null : <EmailCapture/>}
          {this.state.showLoader ? null : <Calendars/>}
          {this.state.showLoader ? null : <Navigation/>}
          {this.state.showLoader ? null : <FoodMenu/>}

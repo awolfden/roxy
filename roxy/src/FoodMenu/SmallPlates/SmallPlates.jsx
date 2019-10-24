@@ -5,36 +5,62 @@ class SmallPlates extends Component {
         super();
         this.state = {
             plateItems: [
+                {'name': 'Cheese & Charcuterie Board',
+                 'description': 'Assortment of meats and cheeses, local honeycomb, organic red grapes, whole grain mustard, crostini'},
+                {'name': 'Cauliflower Mash',
+                 'description': 'Organic cauliflower, onion, garlic, butter, parmesan'},
                 {'name': 'Falafel Balls',
-                 'description': 'House-made tahini dressing'},
-                {'name': 'Pastrami Sliders',
-                 'description': 'Carmelized onion, melted cold-smoked gouda, house-made pretzel bun'},
-                {'name': 'Fried Brussel Sprouts',
-                 'description': 'Parmesan cheese, bacon jam'},
-                {'name': 'Carnitas Tacos',
-                 'description': 'Braised pork served street taco style'},
-                {'name': 'Stems and Flappers',
-                 'description': 'House made buffalo sauce or salt and pepper seasoning'},
-                {'name': 'Cheese & Charcuterie',
-                 'description': 'Assortment of meats and cheeses, honeycomb, crostini'},
-                {'name': 'Meatballs',
-                 'description': 'Beef, pork, and veal, secret red sauce, baguette'},
+                'description': 'House-made tahini dressing'},
+                {'name': 'Butternut Squash Soup',
+                 'description': 'Carmelized diced apples, parsley, crema'},
                 {'name': 'Truffle Fries',
-                 'description': 'Truffle aioli'},
+                 'description': 'Parsley, truffle aioli, queso fresco'},
+                {'name': 'Baked Brie',
+                 'description': 'Puff pastry, lavender honey, macadamia nuts, organic red grapes, baguette'},
+                {'name': 'Poutine',
+                 'description': 'Shoestring fries, Wisconsin cheese curds, brown gravy demi-glase'},
+                {'name': 'Carnitas Tacos',
+                 'description': 'Corn tortilla avacado salsa, pico de gallo, queso fresco'},
+                {'name': 'tsaoT odacovA',
+                 'description': 'Baked avacaado, farm-raised egg, nueskes bacon, sourdough'},
+                {'name': 'Denver Frito-Pie',
+                 'description': 'House-made pork green chili, 3-cheese sauce'},
+                {'name': 'Stems & Flappers',
+                 'description': 'House-made buffalo sauce or salt and pepper seasoning served with blue cheese and celery'},
+                {'name': 'Grandmas Meatballs',
+                 'description': 'Beef, porkk & veal, parmesan cheese, secret red sauce, amoroso roll'},
+                {'name': 'Pastrami Sliders',
+                'description': 'Carmelized onion, melted cold-smoked gouda, garlic-horseraddish aioli, house-made pretzel bun'}
             ],
             
             saladItems: [
                 {'name': 'Kale-orado Salad',
-                'description': 'Parmesan cheese, organic kale, crispy chickpeas, roasted fennel, golden raisins, roasted garlic vinaigrette'},
+                'description': 'Organic kale, parmesan cheese, crispy chickpeas, roasted fennel, golden raisins, roasted garlic vinaigrette'},
                 {'name': 'Broadway Salad',
-                'description': 'Candied bacon, organic romaine, pickled red onion, blue cheese crumbles, blue cheese dressing'}
+                'description': 'Organic romaine, blue cheese crumbles, candied bacon, pickled red onion, blue cheese dressing'}
             ],
 
             sandwichItems: [
+                {'name': 'Open Face Caprese',
+                'description': 'Organic tomato, fresh mozzarella, cashew pesto, balsamic reduction, sourdough'},                
                 {'name': 'Falafel Burger',
                 'description': 'Melted mozzarella & cheddar, onion, tomato, sprouts, tahini dressing, 7-grain bun'},
-                {'name': 'Lamb Burger',
-                'description': 'Feta cheese, tatziki, red onion, tomato, cucumber'}
+                {'name': 'Pho-get-about-it',
+                'description': 'Asian glazed pork tenderloin, carrots, cabbage, cilantro, wasabi mayo, ciabatta, side of spicy pho broth'}
+            ],
+            entreeItems: [
+                {'name': 'House Made Ravioli',
+                'description': 'Fresh ricotta, Italian spice blend, house-made marinara'},                
+                {'name': 'Half-Baked Chicken',
+                'description': 'Cheesy polenta, seasonal vegetables, saffron, lemon'},
+                {'name': 'Roxy Mac N Cheese',
+                'description': 'Orecchiette pasta, 3-cheese sauce blend, your choice of carnitas or falafel balls'}
+            ],
+            dessertItems: [
+                {'name': 'Chocolate Avacado',
+                'description': 'Avacado, chocolate dip, house-made bourbon ice cream, orange zest'},                
+                {'name': 'Brulee Cheesecake',
+                'description': 'Seasonal berry coulis'}
             ]
         }
     }
@@ -68,6 +94,24 @@ class SmallPlates extends Component {
                     </div>
                 )
             });
+        const showEntreeItems = 
+            this.state.entreeItems.map((item, index) => {
+                return(
+                    <div key={index}>
+                        <p>{item.name}</p>
+                        <span>{item.description}</span>
+                    </div>
+                )
+            });
+        const showDessertItems = 
+            this.state.dessertItems.map((item, index) => {
+                return(
+                    <div key={index}>
+                        <p>{item.name}</p>
+                        <span>{item.description}</span>
+                    </div>
+                )
+            });
         
     
         return(
@@ -88,6 +132,18 @@ class SmallPlates extends Component {
                     <h3>Sandwiches</h3>
                     <div className="sandwichList">
                         {showSandwichItems}
+                    </div>
+                </div>
+                <div id="entreeItems">
+                    <h3>Entreé</h3>
+                    <div className="sandwichList">
+                        {showEntreeItems}
+                    </div>
+                </div>
+                <div id="dessertItems">
+                    <h3>Dessert</h3>
+                    <div className="sandwichList">
+                        {showDessertItems}
                     </div>
                 </div>
             </>

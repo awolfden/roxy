@@ -12,20 +12,28 @@
       img {
           height: 60%;
       }
+      p {
+        text-align: center;
+        }
 }
 
 
 #foodmenu {
     background-color: gray;
-    
-    
+
+    p {
+        text-align: center !important;
+    }
 }
 
-#drinks, #brunch, #smallPlates, #saladItems, #sandwichItems {
+#drinks, #brunch, #smallPlates, #saladItems, #sandwichItems, #entreeItems, #dessertItems {
     padding-bottom: 100px;
+    text-align: center;
+
     h3 {
         text-align: center;
         background-color: rgba(0, 0, 0, 0.048);
+        
     }
 
     .cocktailList, .brunchList, .plateList, .saladList, .sandwichList {
@@ -35,6 +43,7 @@
     p {
         font-size: 22px;
         margin-bottom: -5px;
+        padding-bottom: 5px;
     }
 
     span {

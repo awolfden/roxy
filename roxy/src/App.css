@@ -113,26 +113,34 @@
 #menu img {
   height: 60%;
 }
+#menu p {
+  text-align: center;
+}
 
 #foodmenu {
   background-color: gray;
 }
-
-#drinks, #brunch, #smallPlates, #saladItems, #sandwichItems {
-  padding-bottom: 100px;
+#foodmenu p {
+  text-align: center !important;
 }
-#drinks h3, #brunch h3, #smallPlates h3, #saladItems h3, #sandwichItems h3 {
+
+#drinks, #brunch, #smallPlates, #saladItems, #sandwichItems, #entreeItems, #dessertItems {
+  padding-bottom: 100px;
+  text-align: center;
+}
+#drinks h3, #brunch h3, #smallPlates h3, #saladItems h3, #sandwichItems h3, #entreeItems h3, #dessertItems h3 {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.048);
 }
-#drinks .cocktailList, #drinks .brunchList, #drinks .plateList, #drinks .saladList, #drinks .sandwichList, #brunch .cocktailList, #brunch .brunchList, #brunch .plateList, #brunch .saladList, #brunch .sandwichList, #smallPlates .cocktailList, #smallPlates .brunchList, #smallPlates .plateList, #smallPlates .saladList, #smallPlates .sandwichList, #saladItems .cocktailList, #saladItems .brunchList, #saladItems .plateList, #saladItems .saladList, #saladItems .sandwichList, #sandwichItems .cocktailList, #sandwichItems .brunchList, #sandwichItems .plateList, #sandwichItems .saladList, #sandwichItems .sandwichList {
+#drinks .cocktailList, #drinks .brunchList, #drinks .plateList, #drinks .saladList, #drinks .sandwichList, #brunch .cocktailList, #brunch .brunchList, #brunch .plateList, #brunch .saladList, #brunch .sandwichList, #smallPlates .cocktailList, #smallPlates .brunchList, #smallPlates .plateList, #smallPlates .saladList, #smallPlates .sandwichList, #saladItems .cocktailList, #saladItems .brunchList, #saladItems .plateList, #saladItems .saladList, #saladItems .sandwichList, #sandwichItems .cocktailList, #sandwichItems .brunchList, #sandwichItems .plateList, #sandwichItems .saladList, #sandwichItems .sandwichList, #entreeItems .cocktailList, #entreeItems .brunchList, #entreeItems .plateList, #entreeItems .saladList, #entreeItems .sandwichList, #dessertItems .cocktailList, #dessertItems .brunchList, #dessertItems .plateList, #dessertItems .saladList, #dessertItems .sandwichList {
   margin: auto 250px;
 }
-#drinks p, #brunch p, #smallPlates p, #saladItems p, #sandwichItems p {
+#drinks p, #brunch p, #smallPlates p, #saladItems p, #sandwichItems p, #entreeItems p, #dessertItems p {
   font-size: 22px;
   margin-bottom: -5px;
+  padding-bottom: 5px;
 }
-#drinks span, #brunch span, #smallPlates span, #saladItems span, #sandwichItems span {
+#drinks span, #brunch span, #smallPlates span, #saladItems span, #sandwichItems span, #entreeItems span, #dessertItems span {
   font-size: 13px;
   color: gray;
   font-style: italic;

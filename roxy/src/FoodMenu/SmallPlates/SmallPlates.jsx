@@ -28,7 +28,7 @@ class SmallPlates extends Component {
                 {'name': 'Stems & Flappers',
                  'description': 'House-made buffalo sauce or salt and pepper seasoning served with blue cheese and celery'},
                 {'name': 'Grandmas Meatballs',
-                 'description': 'Beef, porkk & veal, parmesan cheese, secret red sauce, amoroso roll'},
+                 'description': 'Beef, pork & veal, parmesan cheese, secret red sauce, amoroso roll'},
                 {'name': 'Pastrami Sliders',
                 'description': 'Carmelized onion, melted cold-smoked gouda, garlic-horseraddish aioli, house-made pretzel bun'}
             ],

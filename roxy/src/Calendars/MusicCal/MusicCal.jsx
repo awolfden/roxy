@@ -42,12 +42,12 @@ class MusicCal extends Component {
   
   getEvents = async () => {
     try {
-      const response = await fetch("https://www.googleapis.com/calendar/v3/calendars/broadwayroxy.com_76kjffbp3se29lk10ptsqr2bm0@group.calendar.google.com/events?key=AIzaSyAMcCW7mJqkNNPoAWNG7VnI3n7pjo-3bcg");
+      const response = await fetch("https://www.googleapis.com/calendar/v3/calendars/broadwayroxy.com_76kjffbp3se29lk10ptsqr2bm0@group.calendar.google.com/events?key=AIzaSyAMcCW7mJqkNNPoAWNG7VnI3n7pjo-3bcg&maxResults=2500");
       if(response.status !== 200){
         throw(Error(response.statusText));
       }
       const parsedResponse = await response.json();
-      //console.log(parsedResponse);
+      console.log(parsedResponse);
 
       const eventsArray = parsedResponse.items.map((event) => {
         //console.log(event.status);

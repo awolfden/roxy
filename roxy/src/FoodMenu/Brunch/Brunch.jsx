@@ -28,7 +28,7 @@ class Brunch extends Component {
     
         return(
             <div id="brunch">
-                <h3>Brunch Coming Soon!</h3>
+                <h3>Brunch Served Saturday and Sunday 10am - 3pm</h3>
                 <div className="brunchList">
                     {/* {showBrunchItems} */}
                     <img src={brunchImage} alt="champagne glasses clinking"/>

@@ -36,7 +36,7 @@ export default function HideAppBar(props) {
         <AppBar>
           <Toolbar id="toolbar">
                 <SimpleMenu/>
-                <Typography variant="h6"><a href="#home" style={{ textDecoration: 'none' }}>Roxy Broadway</a></Typography>
+                <Typography variant="h6"><a href="#home" style={{ textDecoration: 'none' }}>Roxy Broadway - Denver</a></Typography>
           </Toolbar>
         </AppBar>
       </HideOnScroll>

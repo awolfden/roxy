@@ -20,9 +20,9 @@ class SmallPlates extends Component {
                 {'name': 'Poutine',
                  'description': 'Shoestring fries, Wisconsin cheese curds, brown gravy demi-glase'},
                 {'name': 'Carnitas Tacos',
-                 'description': 'Corn tortilla avacado salsa, pico de gallo, queso fresco'},
+                 'description': 'Corn tortilla avocado salsa, pico de gallo, queso fresco'},
                 {'name': 'tsaoT odacovA',
-                 'description': 'Baked avacaado, farm-raised egg, nueskes bacon, sourdough'},
+                 'description': 'Baked avocado, farm-raised egg, nueskes bacon, sourdough'},
                 {'name': 'Denver Frito-Pie',
                  'description': 'House-made pork green chili, 3-cheese sauce'},
                 {'name': 'Stems & Flappers',
@@ -57,8 +57,8 @@ class SmallPlates extends Component {
                 'description': 'Orecchiette pasta, 3-cheese sauce blend, your choice of carnitas or falafel balls'}
             ],
             dessertItems: [
-                {'name': 'Chocolate Avacado',
-                'description': 'Avacado, chocolate dip, house-made bourbon ice cream, orange zest'},                
+                {'name': 'Chocolate Avocado',
+                'description': 'Avocado, chocolate dip, house-made bourbon ice cream, orange zest'},                
                 {'name': 'Brulee Cheesecake',
                 'description': 'Seasonal berry coulis'}
             ]
@@ -124,25 +124,25 @@ class SmallPlates extends Component {
                 </div>
                 <div id="saladItems">
                     <h3>Salads</h3>
-                    <div className="saladList">
+                    <div className="plateList">
                         {showSaladItems}
                     </div>
                 </div>
                 <div id="sandwichItems">
                     <h3>Sandwiches</h3>
-                    <div className="sandwichList">
+                    <div className="plateList">
                         {showSandwichItems}
                     </div>
                 </div>
                 <div id="entreeItems">
                     <h3>Entreé</h3>
-                    <div className="sandwichList">
+                    <div className="plateList">
                         {showEntreeItems}
                     </div>
                 </div>
                 <div id="dessertItems">
                     <h3>Dessert</h3>
-                    <div className="sandwichList">
+                    <div className="plateList">
                         {showDessertItems}
                     </div>
                 </div>

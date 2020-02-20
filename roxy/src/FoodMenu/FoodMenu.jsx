@@ -10,7 +10,6 @@ import menuRoxy from '../images/menu-roxy-logo.png';
 
 
 
-
 const useStyles = makeStyles({
   root: {
     flexGrow: 1,
@@ -48,6 +47,9 @@ export default function CenteredTabs() {
       <header className="App-header">
         <img src={menuRoxy} className="shop-logo" alt="logo" />
       </header>
+      <div>
+        <p>Menu is subject to change</p>
+      </div>
         <Paper className={classes.root}>
             <Tabs
                 value={value}

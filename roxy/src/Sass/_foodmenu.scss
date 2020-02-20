@@ -54,9 +54,10 @@
 }
 
 #brunch {
-    div.brunchList {
+    .brunchList {
         display: flex;
         justify-content: center;
+        flex-direction: column;
 
         img {
             opacity: .3

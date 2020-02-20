@@ -133,7 +133,7 @@ class MusicCal extends Component {
         <div className="App calendar" >
           <header className="App-header">
 
-            <h2 className="App-title" id="musiccal">Music Calendar</h2>
+            {/* <h2 className="App-title" id="musiccal">Music Calendar</h2> */}
           </header>
           <div style={{ height: 700 }}>
             <Calendar

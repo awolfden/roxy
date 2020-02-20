@@ -146,11 +146,12 @@
   font-style: italic;
 }
 
-#brunch div.brunchList {
+#brunch .brunchList {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
-#brunch div.brunchList img {
+#brunch .brunchList img {
   opacity: 0.3;
 }
 
@@ -185,6 +186,16 @@
 #contact a {
   text-decoration: none;
   color: white;
+}
+#contact .contactTitle {
+  margin-top: 10px;
+}
+#contact .emailLink:hover {
+  color: #5092E4;
+}
+#contact .contactLink {
+  position: relative;
+  left: 10px;
 }
 #contact .flexContainer {
   display: flex;
@@ -330,7 +341,7 @@ div.rbc-event {
     margin: 0px;
   }
 
-  #drinks .cocktailList, #drinks .plateList, #drinks .brunchList, #brunch .cocktailList, #brunch .plateList, #brunch .brunchList, #smallPlates .cocktailList, #smallPlates .plateList, #smallPlates .brunchList {
+  #drinks .cocktailList, #drinks .plateList, #drinks .brunchList, #brunch .cocktailList, #brunch .plateList, #brunch .brunchList, #smallPlates .cocktailList, #smallPlates .plateList, #smallPlates .brunchList, #saladItems .cocktailList, #saladItems .plateList, #saladItems .brunchList, #sandwichItems .cocktailList, #sandwichItems .plateList, #sandwichItems .brunchList, #entreeItems .cocktailList, #entreeItems .plateList, #entreeItems .brunchList, #dessertItems .cocktailList, #dessertItems .plateList, #dessertItems .brunchList {
     margin: auto 30px;
   }
 

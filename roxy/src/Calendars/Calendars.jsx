@@ -48,8 +48,8 @@ export default function CenteredTabs() {
                 textColor="primary"
                 centered
             >
-                <Tab onClick={() => setTab(1)} label="Music" />
-                <Tab onClick={() => setTab(2)} label="Events & Specials" />
+                <Tab onClick={() => setTab(1)} label="Music Calendar" />
+                {/* <Tab onClick={() => setTab(2)} label="Events & Specials" /> */}
             </Tabs>
         </Paper>
         {<h1>{showTab()}</h1>}

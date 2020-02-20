@@ -36,6 +36,19 @@
         color: white;
     }
 
+    .contactTitle {
+        margin-top: 10px;
+    }
+
+    .emailLink:hover {
+        color: #5092E4
+    }
+
+    .contactLink {
+        position: relative;
+        left: 10px
+    }
+
     .flexContainer {
         display: flex;
         justify-content: space-evenly;

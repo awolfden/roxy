@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import brunchImage from '../../images/champagne.png';
+import brunch from '../../images/denver_COVIDBrunch.jpg';
 
 class Brunch extends Component {
     constructor(){
@@ -164,11 +165,11 @@ class Brunch extends Component {
     
         return(
             <div id="brunch">
-                <div>
+                {/* <div>
                     <h3>Brunch Served Saturday and Sunday 10am - 3pm</h3>
                     <div className="brunchList">
                         {showBrunchItems}
-                        {/* <img src={brunchImage} alt="champagne glasses clinking"/> */}
+                        
                     </div>
                 </div>
                 <div>
@@ -209,6 +210,10 @@ class Brunch extends Component {
                     <div className="brunchList">
                         {showBeverageItems}
                     </div>
+                </div> */}
+
+                <div style={{display: 'flex', justifyContent: 'center'}}>
+                    <img src={brunch} alt='dinner menu' style={{width: '70%'}}></img>
                 </div>
             </div>
 

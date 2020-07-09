@@ -1,20 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.2c886345.chunk.css",
-    "main.js": "/static/js/main.37590af7.chunk.js",
-    "main.js.map": "/static/js/main.37590af7.chunk.js.map",
+    "main.js": "/static/js/main.b2764a50.chunk.js",
+    "main.js.map": "/static/js/main.b2764a50.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fc9cbb2b.js",
     "runtime-main.js.map": "/static/js/runtime-main.fc9cbb2b.js.map",
     "static/css/2.25b83785.chunk.css": "/static/css/2.25b83785.chunk.css",
-    "static/js/2.18311775.chunk.js": "/static/js/2.18311775.chunk.js",
-    "static/js/2.18311775.chunk.js.map": "/static/js/2.18311775.chunk.js.map",
+    "static/js/2.f720320f.chunk.js": "/static/js/2.f720320f.chunk.js",
+    "static/js/2.f720320f.chunk.js.map": "/static/js/2.f720320f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5db6bf0574654576244497910f1cbc28.js": "/precache-manifest.5db6bf0574654576244497910f1cbc28.js",
+    "precache-manifest.ec062f3c787639bd5153f2cddd008977.js": "/precache-manifest.ec062f3c787639bd5153f2cddd008977.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.25b83785.chunk.css.map": "/static/css/2.25b83785.chunk.css.map",
     "static/css/main.2c886345.chunk.css.map": "/static/css/main.2c886345.chunk.css.map",
-    "static/js/2.18311775.chunk.js.LICENSE.txt": "/static/js/2.18311775.chunk.js.LICENSE.txt",
+    "static/js/2.f720320f.chunk.js.LICENSE.txt": "/static/js/2.f720320f.chunk.js.LICENSE.txt",
     "static/media/contact-roxy-logo.png": "/static/media/contact-roxy-logo.7a86ad60.png",
+    "static/media/denver_COVIDBrunch.jpg": "/static/media/denver_COVIDBrunch.ad82cbbe.jpg",
+    "static/media/denver_COVIDDinner.jpg": "/static/media/denver_COVIDDinner.80857255.jpg",
     "static/media/gramophone_logo_white.png": "/static/media/gramophone_logo_white.cf59c5b7.png",
     "static/media/App.css": "/static/media/wood_background.5bef1e44.jpeg",
     "static/media/menu-roxy-logo.png": "/static/media/menu-roxy-logo.798d9012.png",
@@ -25,8 +27,8 @@
   "entrypoints": [
     "static/js/runtime-main.fc9cbb2b.js",
     "static/css/2.25b83785.chunk.css",
-    "static/js/2.18311775.chunk.js",
+    "static/js/2.f720320f.chunk.js",
     "static/css/main.2c886345.chunk.css",
-    "static/js/main.37590af7.chunk.js"
+    "static/js/main.b2764a50.chunk.js"
   ]
 }

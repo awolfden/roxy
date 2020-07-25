@@ -116,6 +116,10 @@
 #menu p {
   text-align: center;
 }
+#menu .flex-container {
+  display: flex;
+  justify-content: center;
+}
 
 #foodmenu {
   background-color: gray;

@@ -15,6 +15,11 @@
       p {
         text-align: center;
         }
+
+    .flex-container {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 
@@ -24,6 +29,8 @@
     p {
         text-align: center !important;
     }
+
+    
 }
 
 #drinks, #brunch, #smallPlates, #saladItems, #sandwichItems, #entreeItems, #dessertItems {

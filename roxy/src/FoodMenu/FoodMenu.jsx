@@ -47,6 +47,11 @@ export default function CenteredTabs() {
       <header className="App-header">
         <img src={menuRoxy} className="shop-logo" alt="logo" />
       </header>
+      <div className='flex-container'>
+        <a href="https://order.online/store/roxy-on-broadway-1065206" target="_blank" alt="Order Food Delivery with DoorDash" title="Order Food Delivery with DoorDash" style={{textDecoration: "none"}}>
+            <div style={{width:180, height:80, backgroundSize: 'contain', margin: "15px 0px 5px 0px", backgroundImage: "url('https://cdn.doordash.com/media/button/button_white_xl.svg')", color:"transparent"}}>Order Food Delivery with DoorDash</div>
+        </a>
+      </div>
       <div>
         <p>Menu is subject to change</p>
       </div>

@@ -15,7 +15,8 @@ class InstagramFeed extends Component {
     }
 
     getPosts = async () => {
-        const apiKey = process.env.INSTAGRAM_KEY;
+        const apiKey = 'IGQVJVSVZAWWHMzb2wwYU5NaUU4MmplLWxWVmJnMjZAQZA0RtMHhvQkFzQTBIbDhXQUtVMDhYQ0lYT1NtOVJzVU9iMW9kS1M4TEh5T2NrbWZAnYVhpMHhzSDl0MHhEbF9wNk55dG5xblJn';
+        
         try {
           const response = await fetch(`https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,permalink&access_token=${apiKey}`);
           if(response.status !== 200){
@@ -25,7 +26,7 @@ class InstagramFeed extends Component {
         //   console.log(parsedResponse, "insta PR");
     
           const postsArray = parsedResponse.data.map((post) => {
-            console.log(post);
+            // console.log(post);
             return {
                 id: post.id,
                 img: post.media_url,

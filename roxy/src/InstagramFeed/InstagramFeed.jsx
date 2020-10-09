@@ -15,21 +15,22 @@ class InstagramFeed extends Component {
     }
 
     getPosts = async () => {
+        const apiKey = process.env.INSTAGRAM_KEY;
         try {
-          const response = await fetch("https://api.instagram.com/v1/users/self/media/recent/?access_token=13458740759.da3c1a7.d73a57b3f5f94679bea9931bb4eb9d73");
+          const response = await fetch(`https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,permalink&access_token=${apiKey}`);
           if(response.status !== 200){
             throw(Error(response.statusText));
           }
           const parsedResponse = await response.json();
-          //console.log(parsedResponse, "insta PR");
+        //   console.log(parsedResponse, "insta PR");
     
           const postsArray = parsedResponse.data.map((post) => {
-            //console.log(post);
+            console.log(post);
             return {
                 id: post.id,
-                img: post.images.standard_resolution.url,
-                hyperlink: post.link,
-                caption: post.caption.text
+                img: post.media_url,
+                hyperlink: post.permalink,
+                caption: post.caption
             }
             
           });

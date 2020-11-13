@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d929c38d38d8c78fed72e3323e2d5d5b",
+    "revision": "fcc8e4661b50b42e5170ed6bd7ef90f2",
     "url": "/index.html"
   },
   {
-    "revision": "2ac71fcfdb5ecf150e81",
+    "revision": "2c7992becdd1c247ad16",
     "url": "/static/css/2.25b83785.chunk.css"
   },
   {
-    "revision": "e860d35207043916e0ed",
-    "url": "/static/css/main.ce276732.chunk.css"
+    "revision": "88bbe43d3551797899a7",
+    "url": "/static/css/main.04a92a06.chunk.css"
   },
   {
-    "revision": "2ac71fcfdb5ecf150e81",
-    "url": "/static/js/2.f720320f.chunk.js"
+    "revision": "2c7992becdd1c247ad16",
+    "url": "/static/js/2.2932f877.chunk.js"
   },
   {
     "revision": "6f5f1c4a5f7f6e382b8aeca1b4ac8d96",
-    "url": "/static/js/2.f720320f.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.2932f877.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e860d35207043916e0ed",
-    "url": "/static/js/main.2c054b4e.chunk.js"
+    "revision": "88bbe43d3551797899a7",
+    "url": "/static/js/main.dd5ca345.chunk.js"
   },
   {
     "revision": "eb03b06ce2d96f523ba8",
@@ -34,10 +34,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2b1c82bff39b877102fe7b77f4db847a",
     "url": "/static/media/denver_COVIDBrunch.2b1c82bf.jpg"
-  },
-  {
-    "revision": "4b2e41436c5d8a8352436d86561e1e6d",
-    "url": "/static/media/denver_COVIDDinner.4b2e4143.jpg"
   },
   {
     "revision": "cf59c5b73d5ef38e67320ebcfc5c1d56",
@@ -58,6 +54,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5a8061f966c31973911f7cc3dc1fa9f8",
     "url": "/static/media/roxy_giftcard.5a8061f9.jpg"
+  },
+  {
+    "revision": "da9900bfb9da62c7d212fdbb9e50f4bd",
+    "url": "/static/media/rw2020nov.da9900bf.jpg"
   },
   {
     "revision": "be7f2d48480700755805d49b111e0459",

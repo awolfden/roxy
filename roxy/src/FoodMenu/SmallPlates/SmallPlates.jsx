@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-// import dinner from "../../images/denver_COVIDDinner.jpg";
-import rwWeek from "../../images/rw2020nov.jpg";
+import dinner from "../../images/denver_COVIDDinner.jpg";
+// import rwWeek from "../../images/rw2020nov.jpg";
 
 class SmallPlates extends Component {
     constructor(){
@@ -149,8 +149,7 @@ class SmallPlates extends Component {
                     </div>
                 </div> */}
                 <div style={{display: 'flex', justifyContent: 'center'}}>
-                    {/* <img src={dinner} alt='dinner menu' style={{width: '70%'}}></img> */}
-                    <img src={rwWeek} alt='restaurant week menu' style={{width: '70%'}}></img>
+                    <img src={dinner} alt='dinner menu' style={{width: '70%'}}></img>
                 </div>
                 
             </>

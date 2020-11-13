@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fcc8e4661b50b42e5170ed6bd7ef90f2",
+    "revision": "44130e321ae267e2d445929ed3ee9154",
     "url": "/index.html"
   },
   {
-    "revision": "2c7992becdd1c247ad16",
+    "revision": "4bbf5c55dcfe69f7ca2b",
     "url": "/static/css/2.25b83785.chunk.css"
   },
   {
-    "revision": "88bbe43d3551797899a7",
+    "revision": "ffd5053312da5f1386ed",
     "url": "/static/css/main.04a92a06.chunk.css"
   },
   {
-    "revision": "2c7992becdd1c247ad16",
-    "url": "/static/js/2.2932f877.chunk.js"
+    "revision": "4bbf5c55dcfe69f7ca2b",
+    "url": "/static/js/2.ee74c37c.chunk.js"
   },
   {
     "revision": "6f5f1c4a5f7f6e382b8aeca1b4ac8d96",
-    "url": "/static/js/2.2932f877.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.ee74c37c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "88bbe43d3551797899a7",
-    "url": "/static/js/main.dd5ca345.chunk.js"
+    "revision": "ffd5053312da5f1386ed",
+    "url": "/static/js/main.851230c2.chunk.js"
   },
   {
     "revision": "eb03b06ce2d96f523ba8",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2b1c82bff39b877102fe7b77f4db847a",
     "url": "/static/media/denver_COVIDBrunch.2b1c82bf.jpg"
+  },
+  {
+    "revision": "4b2e41436c5d8a8352436d86561e1e6d",
+    "url": "/static/media/denver_COVIDDinner.4b2e4143.jpg"
   },
   {
     "revision": "cf59c5b73d5ef38e67320ebcfc5c1d56",

@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "44130e321ae267e2d445929ed3ee9154",
+    "revision": "3f9856d6c130aa2c5f078ef28f75df4f",
     "url": "/index.html"
   },
   {
-    "revision": "4bbf5c55dcfe69f7ca2b",
+    "revision": "a772ded8ad1e19a0629d",
     "url": "/static/css/2.25b83785.chunk.css"
   },
   {
-    "revision": "ffd5053312da5f1386ed",
-    "url": "/static/css/main.04a92a06.chunk.css"
+    "revision": "0b64992c9664e7bab91b",
+    "url": "/static/css/main.00097905.chunk.css"
   },
   {
-    "revision": "4bbf5c55dcfe69f7ca2b",
-    "url": "/static/js/2.ee74c37c.chunk.js"
+    "revision": "a772ded8ad1e19a0629d",
+    "url": "/static/js/2.2494eeac.chunk.js"
   },
   {
     "revision": "6f5f1c4a5f7f6e382b8aeca1b4ac8d96",
-    "url": "/static/js/2.ee74c37c.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.2494eeac.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ffd5053312da5f1386ed",
-    "url": "/static/js/main.851230c2.chunk.js"
+    "revision": "0b64992c9664e7bab91b",
+    "url": "/static/js/main.46268194.chunk.js"
   },
   {
     "revision": "eb03b06ce2d96f523ba8",
@@ -46,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2c580f423ac518b10efd5fe46e761096",
     "url": "/static/media/gramophone_small.2c580f42.png"
+  },
+  {
+    "revision": "4566ba81729c1cb098613786a0061a61",
+    "url": "/static/media/holiday_gc_banner.4566ba81.jpg"
   },
   {
     "revision": "798d901296cf3600998e0722c48497f9",

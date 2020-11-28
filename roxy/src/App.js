@@ -10,6 +10,7 @@ import Shop from './Shop/Shop';
 import Loader from './Loader/Loader';
 import InstagramFeed from './InstagramFeed/InstagramFeed';
 import EmailCapture from './EmailCapture/EmailCapture';
+import HolidayGiftCard from './HolidayGiftCard/HolidayGiftCard';
 
 
 
@@ -43,6 +44,7 @@ class App extends Component {
          {this.state.showLoader ? null : <Navigation/>}
          {this.state.showLoader ? null : <Home/>}
          {this.state.showLoader ? null : <OpenForMusic/>}
+         {this.state.showLoader ? null : <HolidayGiftCard/>}
          {this.state.showLoader ? null : <EmailCapture/>}
          {this.state.showLoader ? null : <Calendars/>}
          {this.state.showLoader ? null : <Navigation/>}

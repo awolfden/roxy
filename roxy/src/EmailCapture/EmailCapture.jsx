@@ -77,7 +77,7 @@ class EmailCapture extends Component {
         return(
             <div id="emailForm" style={{display:'flex', justifyContent: 'center', marginBottom: '35px'}}>
                 <div style={{width: '65%'}}>
-                <h2 style={{textAlign: 'center'}}>Join the mailing list for 10% off your next order!</h2>
+                <h2 style={{textAlign: 'center'}}>Join the mailing list for 10% off your next in person order!</h2>
                 <form 
                     id={'form'}
                     style={{display: 'flex', flexDirection: 'column'}}

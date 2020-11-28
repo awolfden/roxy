@@ -683,6 +683,15 @@ div.rbc-event {
   padding: 5px;
 }
 
+#holidayGiftCard .flex-container {
+  display: flex;
+  justify-content: center;
+}
+#holidayGiftCard img {
+  width: 100%;
+  align-self: center;
+}
+
 * {
   font-family: "Lato", sans-serif !important;
 }

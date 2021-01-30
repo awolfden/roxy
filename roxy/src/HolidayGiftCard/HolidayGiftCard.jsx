@@ -7,7 +7,7 @@ class HolidayGiftCard extends Component {
             <div id="holidayGiftCard">
                 <div className='flex-container image'>
                     <a href="https://www.toasttab.com/roxy-554-s-broadway/giftcards" target="_blank">
-                        <img src={require('../images/holiday_gc_banner.jpg')} alt="click for holiday gift card"/>
+                        <img src={require('../images/valentines_banner.png')} alt="click for holiday gift card"/>
                     </a>
                 </div>
             </div>

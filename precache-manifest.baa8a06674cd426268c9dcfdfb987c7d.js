@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "08f1f5596a777612308c87b8395f257a",
+    "revision": "355283034a4c6dc2947743d64445ede7",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.25b83785.chunk.css"
   },
   {
-    "revision": "edc48775727e881bc8c0",
+    "revision": "c9388edc124e5db61a40",
     "url": "/static/css/main.00097905.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.fb35c37d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "edc48775727e881bc8c0",
-    "url": "/static/js/main.344b1bcd.chunk.js"
+    "revision": "c9388edc124e5db61a40",
+    "url": "/static/js/main.f89e78c6.chunk.js"
   },
   {
     "revision": "eb03b06ce2d96f523ba8",
@@ -68,12 +68,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/shop_roxy.be7f2d48.png"
   },
   {
-    "revision": "a75d4046144fb33a6d70ee586eaaeab3",
-    "url": "/static/media/typewriter.a75d4046.jpeg"
+    "revision": "620f2c2d6c9afa44dce29643ba95e99a",
+    "url": "/static/media/spring_banner.620f2c2d.png"
   },
   {
-    "revision": "c3c0226a02c3b153653e1633fa1ab966",
-    "url": "/static/media/valentines_banner.c3c0226a.png"
+    "revision": "a75d4046144fb33a6d70ee586eaaeab3",
+    "url": "/static/media/typewriter.a75d4046.jpeg"
   },
   {
     "revision": "5bef1e445b5f2d3763dfc7f4ec275e3c",

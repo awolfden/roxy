@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import MusicEvent from './MusicEvent/MusicEvent';
+import Modal from '@material-ui/core/Modal';
+import { makeStyles } from '@material-ui/core/styles';
 
 import {
     Calendar,
@@ -13,9 +15,9 @@ import {
   } from 'react-big-calendar';
 
 import moment from 'moment';
-
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import '../../App.css';
+
 
 
 const localizer = momentLocalizer(moment);
@@ -42,7 +44,7 @@ class MusicCal extends Component {
   
   getEvents = async () => {
     try {
-      const response = await fetch("https://www.googleapis.com/calendar/v3/calendars/broadwayroxy.com_76kjffbp3se29lk10ptsqr2bm0@group.calendar.google.com/events?key=AIzaSyAMcCW7mJqkNNPoAWNG7VnI3n7pjo-3bcg&maxResults=2500");
+      const response = await fetch("https://www.googleapis.com/calendar/v3/calendars/broadwayroxy.com_76kjffbp3se29lk10ptsqr2bm0@group.calendar.google.com/events?key=AIzaSyAMcCW7mJqkNNPoAWNG7VnI3n7pjo-3bcg&maxResults=2500&orderBy=updated");
       if(response.status !== 200){
         throw(Error(response.statusText));
       }
@@ -69,7 +71,8 @@ class MusicCal extends Component {
               "end": dateEnd,
               "description" : event.description,
               "allDay?": false,
-              "resource?": null
+              "resource?": null,
+              "location": event.location
             }
           )
         } else if (event.start.date){
@@ -82,7 +85,8 @@ class MusicCal extends Component {
               "end": dateStart,
               "description" : event.description,
               "allDay?": false,
-              "resource?": null
+              "resource?": null,
+              "location": event.location
             }
           )
         } else {
@@ -110,21 +114,25 @@ class MusicCal extends Component {
   }
 
   showEvent = (e) => {
-    //console.log(e);
+    console.log(e);
     this.setState({
       selected: true,
       thisEvent: e
     });
   }
 
-  hideEvent = () => {
+  hideEvent = (e) => {
+    // console.log(e.target.className)  
     if (this.state.selected){
-      this.setState({
-        selected: false,
-        thisEvent: null
-      })
-    }
+        this.setState({
+          selected: false,
+          thisEvent: null
+        })
+      }    
   }
+
+
+  
 
   render() {
     

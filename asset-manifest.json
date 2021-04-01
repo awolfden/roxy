@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.00097905.chunk.css",
-    "main.js": "/static/js/main.370b781a.chunk.js",
-    "main.js.map": "/static/js/main.370b781a.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.fc9cbb2b.js",
-    "runtime-main.js.map": "/static/js/runtime-main.fc9cbb2b.js.map",
-    "static/css/2.25b83785.chunk.css": "/static/css/2.25b83785.chunk.css",
-    "static/js/2.b5b52177.chunk.js": "/static/js/2.b5b52177.chunk.js",
-    "static/js/2.b5b52177.chunk.js.map": "/static/js/2.b5b52177.chunk.js.map",
+    "main.css": "/static/css/main.1b3fff09.chunk.css",
+    "main.js": "/static/js/main.a2eb3c79.chunk.js",
+    "main.js.map": "/static/js/main.a2eb3c79.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7c9290f1.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7c9290f1.js.map",
+    "static/css/2.8838ecd7.chunk.css": "/static/css/2.8838ecd7.chunk.css",
+    "static/js/2.ca277193.chunk.js": "/static/js/2.ca277193.chunk.js",
+    "static/js/2.ca277193.chunk.js.map": "/static/js/2.ca277193.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.c17f0645eab1ecdba3041bc5d9a0bdb2.js": "/precache-manifest.c17f0645eab1ecdba3041bc5d9a0bdb2.js",
+    "precache-manifest.0731d3ba4df06e8ca4d7ac47099044ba.js": "/precache-manifest.0731d3ba4df06e8ca4d7ac47099044ba.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.25b83785.chunk.css.map": "/static/css/2.25b83785.chunk.css.map",
-    "static/css/main.00097905.chunk.css.map": "/static/css/main.00097905.chunk.css.map",
-    "static/js/2.b5b52177.chunk.js.LICENSE.txt": "/static/js/2.b5b52177.chunk.js.LICENSE.txt",
+    "static/css/2.8838ecd7.chunk.css.map": "/static/css/2.8838ecd7.chunk.css.map",
+    "static/css/main.1b3fff09.chunk.css.map": "/static/css/main.1b3fff09.chunk.css.map",
+    "static/js/2.ca277193.chunk.js.LICENSE.txt": "/static/js/2.ca277193.chunk.js.LICENSE.txt",
     "static/media/contact-roxy-logo.png": "/static/media/contact-roxy-logo.7a86ad60.png",
     "static/media/denver_COVIDBrunch.jpg": "/static/media/denver_COVIDBrunch.2b1c82bf.jpg",
     "static/media/denver_COVIDDinner.jpg": "/static/media/denver_COVIDDinner.4b2e4143.jpg",
@@ -21,16 +21,13 @@
     "static/media/App.css": "/static/media/wood_background.5bef1e44.jpeg",
     "static/media/menu-roxy-logo.png": "/static/media/menu-roxy-logo.798d9012.png",
     "static/media/openformusic.png": "/static/media/openformusic.05a36bd7.png",
-    "static/media/roxy_giftcard.jpg": "/static/media/roxy_giftcard.5a8061f9.jpg",
-    "static/media/rw2020nov.jpg": "/static/media/rw2020nov.da9900bf.jpg",
-    "static/media/shop_roxy.png": "/static/media/shop_roxy.be7f2d48.png",
-    "static/media/spring_banner.png": "/static/media/spring_banner.620f2c2d.png"
+    "static/media/summer_banner.png": "/static/media/summer_banner.38493298.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.fc9cbb2b.js",
-    "static/css/2.25b83785.chunk.css",
-    "static/js/2.b5b52177.chunk.js",
-    "static/css/main.00097905.chunk.css",
-    "static/js/main.370b781a.chunk.js"
+    "static/js/runtime-main.7c9290f1.js",
+    "static/css/2.8838ecd7.chunk.css",
+    "static/js/2.ca277193.chunk.js",
+    "static/css/main.1b3fff09.chunk.css",
+    "static/js/main.a2eb3c79.chunk.js"
   ]
 }

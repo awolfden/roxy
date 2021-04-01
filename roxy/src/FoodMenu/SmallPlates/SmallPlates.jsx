@@ -69,51 +69,51 @@ class SmallPlates extends Component {
 
     render(){
 
-        const showPlateItems = 
-            this.state.plateItems.map((item, index) => {
-                return(
-                    <div key={index}>
-                        <p>{item.name}</p>
-                        <span>{item.description}</span>
-                    </div>
-                )
-            });
-        const showSaladItems = 
-            this.state.saladItems.map((item, index) => {
-                return(
-                    <div key={index}>
-                        <p>{item.name}</p>
-                        <span>{item.description}</span>
-                    </div>
-                )
-            });
-        const showSandwichItems = 
-            this.state.sandwichItems.map((item, index) => {
-                return(
-                    <div key={index}>
-                        <p>{item.name}</p>
-                        <span>{item.description}</span>
-                    </div>
-                )
-            });
-        const showEntreeItems = 
-            this.state.entreeItems.map((item, index) => {
-                return(
-                    <div key={index}>
-                        <p>{item.name}</p>
-                        <span>{item.description}</span>
-                    </div>
-                )
-            });
-        const showDessertItems = 
-            this.state.dessertItems.map((item, index) => {
-                return(
-                    <div key={index}>
-                        <p>{item.name}</p>
-                        <span>{item.description}</span>
-                    </div>
-                )
-            });
+        // const showPlateItems = 
+        //     this.state.plateItems.map((item, index) => {
+        //         return(
+        //             <div key={index}>
+        //                 <p>{item.name}</p>
+        //                 <span>{item.description}</span>
+        //             </div>
+        //         )
+        //     });
+        // const showSaladItems = 
+        //     this.state.saladItems.map((item, index) => {
+        //         return(
+        //             <div key={index}>
+        //                 <p>{item.name}</p>
+        //                 <span>{item.description}</span>
+        //             </div>
+        //         )
+        //     });
+        // const showSandwichItems = 
+        //     this.state.sandwichItems.map((item, index) => {
+        //         return(
+        //             <div key={index}>
+        //                 <p>{item.name}</p>
+        //                 <span>{item.description}</span>
+        //             </div>
+        //         )
+        //     });
+        // const showEntreeItems = 
+        //     this.state.entreeItems.map((item, index) => {
+        //         return(
+        //             <div key={index}>
+        //                 <p>{item.name}</p>
+        //                 <span>{item.description}</span>
+        //             </div>
+        //         )
+        //     });
+        // const showDessertItems = 
+        //     this.state.dessertItems.map((item, index) => {
+        //         return(
+        //             <div key={index}>
+        //                 <p>{item.name}</p>
+        //                 <span>{item.description}</span>
+        //             </div>
+        //         )
+        //     });
         
     
         return(

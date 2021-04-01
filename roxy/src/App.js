@@ -6,10 +6,10 @@ import OpenForMusic from './OpenForMusic/OpenForMusic';
 import Calendars from './Calendars/Calendars';
 import FoodMenu from './FoodMenu/FoodMenu';
 import Contact from './Contact/Contact';
-import Shop from './Shop/Shop';
+// import Shop from './Shop/Shop';
 import Loader from './Loader/Loader';
 import InstagramFeed from './InstagramFeed/InstagramFeed';
-import EmailCapture from './EmailCapture/EmailCapture';
+// import EmailCapture from './EmailCapture/EmailCapture';
 import EmailCaptureV2 from './EmailCaptureV2/EmailCaptureV2';
 import HolidayGiftCard from './HolidayGiftCard/HolidayGiftCard';
 

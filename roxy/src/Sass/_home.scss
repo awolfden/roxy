@@ -1,6 +1,6 @@
 #home {
     height: 800px;
-    background-image: url('./images/gramophone_small.png');
+    background-image: url('./images/gramophone_smaller.png');
     background-position: right top;
     background-size: auto 100%;
     background-repeat: no-repeat;
@@ -37,6 +37,10 @@
     .flexContainer {
         display: flex;
         justify-content: center;
+    }
+
+    .subheading div {
+        padding: 4px
     }
     
     h6 {

@@ -27,8 +27,13 @@ class Home extends Component {
                     </div>
                 </a>
                 
-                <div className="flexContainer">
-                    <h6><a href="#openForMusic">1920's Ambiance<a/> · <a href="#menu">Classic Cocktails</a> · <a href="#menu">Small Plates</a> · <a href="#calendars">Live Music</a></a></h6>
+                <div className="flexContainer subheading">
+                    <div><h6><a href="#openForMusic">1920's Ambiance ·</a></h6></div>
+                    <div><h6><a href="#menu">  Classic Cocktails ·</a></h6></div>
+                    <div><h6><a href="#menu">  Small Plates ·</a></h6></div>
+                    <div><h6><a href="#calendars">Live Music</a></h6></div>
+                    
+                    {/* <h6><a href="#openForMusic">1920's Ambiance<a/> · <a href="#menu">Classic Cocktails</a> · <a href="#menu">Small Plates</a> · <a href="#calendars">Live Music</a></a></h6> */}
                 </div>
                 
             </div>

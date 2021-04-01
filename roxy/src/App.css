@@ -9,7 +9,7 @@
 
 #home {
   height: 800px;
-  background-image: url("./images/gramophone_small.png");
+  background-image: url("./images/gramophone_smaller.png");
   background-position: right top;
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -43,6 +43,9 @@
 #home .flexContainer {
   display: flex;
   justify-content: center;
+}
+#home .subheading div {
+  padding: 4px;
 }
 #home h6 {
   color: white;

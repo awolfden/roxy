@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import brunchImage from '../../images/champagne.png';
+// import brunchImage from '../../images/champagne.png';
 import brunch from '../../images/denver_COVIDBrunch.jpg';
 
 class Brunch extends Component {
@@ -98,69 +98,69 @@ class Brunch extends Component {
 
     render(){
 
-        const showBrunchItems = 
-            this.state.brunchItems.map((item, index) => {
-                return(
-                    <div key={index}>
-                        <p>{item.name}</p>
-                        <span>{item.description}</span>
-                    </div>
-                )
-            })
-        const showCocktailItems = 
-            this.state.cocktailItems.map((item, index) => {
-                return(
-                    <div key={index}>
-                        <p>{item.name}</p>
-                        <span>{item.description}</span>
-                    </div>
-                )
-            })
-        const showBloodyItems = 
-            this.state.bloodyItems.map((item, index) => {
-                return(
-                    <div key={index}>
-                        <p>{item.name}</p>
-                        <span>{item.description}</span>
-                    </div>
-                )
-            })
-        const showAppetizerItems = 
-            this.state.appetizerItems.map((item, index) => {
-                return(
-                    <div key={index}>
-                        <p>{item.name}</p>
-                        <span>{item.description}</span>
-                    </div>
-                )
-            })
-        const showSandwichItems = 
-            this.state.sandwichItems.map((item, index) => {
-                return(
-                    <div key={index}>
-                        <p>{item.name}</p>
-                        <span>{item.description}</span>
-                    </div>
-                )
-            })
-        const showSaladItems = 
-            this.state.saladItems.map((item, index) => {
-                return(
-                    <div key={index}>
-                        <p>{item.name}</p>
-                        <span>{item.description}</span>
-                    </div>
-                )
-            })
-        const showBeverageItems = 
-            this.state.beverageItems.map((item, index) => {
-                return(
-                    <div key={index}>
-                        <p>{item.name}</p>
-                        <span>{item.description}</span>
-                    </div>
-                )
-            })
+        // const showBrunchItems = 
+        //     this.state.brunchItems.map((item, index) => {
+        //         return(
+        //             <div key={index}>
+        //                 <p>{item.name}</p>
+        //                 <span>{item.description}</span>
+        //             </div>
+        //         )
+        //     })
+        // const showCocktailItems = 
+        //     this.state.cocktailItems.map((item, index) => {
+        //         return(
+        //             <div key={index}>
+        //                 <p>{item.name}</p>
+        //                 <span>{item.description}</span>
+        //             </div>
+        //         )
+        //     })
+        // const showBloodyItems = 
+        //     this.state.bloodyItems.map((item, index) => {
+        //         return(
+        //             <div key={index}>
+        //                 <p>{item.name}</p>
+        //                 <span>{item.description}</span>
+        //             </div>
+        //         )
+        //     })
+        // const showAppetizerItems = 
+        //     this.state.appetizerItems.map((item, index) => {
+        //         return(
+        //             <div key={index}>
+        //                 <p>{item.name}</p>
+        //                 <span>{item.description}</span>
+        //             </div>
+        //         )
+        //     })
+        // const showSandwichItems = 
+        //     this.state.sandwichItems.map((item, index) => {
+        //         return(
+        //             <div key={index}>
+        //                 <p>{item.name}</p>
+        //                 <span>{item.description}</span>
+        //             </div>
+        //         )
+        //     })
+        // const showSaladItems = 
+        //     this.state.saladItems.map((item, index) => {
+        //         return(
+        //             <div key={index}>
+        //                 <p>{item.name}</p>
+        //                 <span>{item.description}</span>
+        //             </div>
+        //         )
+        //     })
+        // const showBeverageItems = 
+        //     this.state.beverageItems.map((item, index) => {
+        //         return(
+        //             <div key={index}>
+        //                 <p>{item.name}</p>
+        //                 <span>{item.description}</span>
+        //             </div>
+        //         )
+        //     })
         
     
         return(

@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6f62bee2fff4c5f284ef72a705e509b5",
+    "revision": "fc8c1a48a9a57f69c2f6710dd129d32e",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.8838ecd7.chunk.css"
   },
   {
-    "revision": "962e1367b92af074d04c",
+    "revision": "ccc04a072ade7d9997e7",
     "url": "/static/css/main.1b3fff09.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.ca277193.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "962e1367b92af074d04c",
-    "url": "/static/js/main.a2eb3c79.chunk.js"
+    "revision": "ccc04a072ade7d9997e7",
+    "url": "/static/js/main.dea6d18b.chunk.js"
   },
   {
     "revision": "527953283837e9269397",
@@ -32,12 +32,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/contact-roxy-logo.7a86ad60.png"
   },
   {
-    "revision": "2b1c82bff39b877102fe7b77f4db847a",
-    "url": "/static/media/denver_COVIDBrunch.2b1c82bf.jpg"
+    "revision": "41e25646b5ffe8c893cadf620182e574",
+    "url": "/static/media/denver_COVIDBrunch.41e25646.png"
   },
   {
-    "revision": "4b2e41436c5d8a8352436d86561e1e6d",
-    "url": "/static/media/denver_COVIDDinner.4b2e4143.jpg"
+    "revision": "449a0d2ee72dc772d349768fd3062580",
+    "url": "/static/media/denver_COVIDDinner.449a0d2e.png"
   },
   {
     "revision": "cf59c5b73d5ef38e67320ebcfc5c1d56",

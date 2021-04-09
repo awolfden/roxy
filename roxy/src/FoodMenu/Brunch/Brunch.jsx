@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 // import brunchImage from '../../images/champagne.png';
-import brunch from '../../images/denver_COVIDBrunch.jpg';
+import brunch from '../../images/denver_COVIDBrunch.png';
 
 class Brunch extends Component {
     constructor(){

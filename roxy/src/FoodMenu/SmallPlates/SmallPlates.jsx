@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import dinner from "../../images/denver_COVIDDinner.jpg";
+import dinner from "../../images/denver_COVIDDinner.png";
 // import rwWeek from "../../images/rw2020nov.jpg";
 
 class SmallPlates extends Component {

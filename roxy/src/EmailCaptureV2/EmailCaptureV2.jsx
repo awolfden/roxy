@@ -85,20 +85,20 @@ const handleSubmit = async (formData, e) => {
     const key = 'AIzaSyCyKy_hkInqbvPUtS3vhavzs__jPU3HOpY'
 //https://cors-proxy.htmldriven.com/?url=
     try {
-        const response = await fetch(`https://cors-anywhere.herokuapp.com/https://script.google.com/macros/s/AKfycbxflVZ-4yH90gypFFoaSU17kjO-hMQ7qaTw72OuNWHuB5LtxeDSBtwyhPGLlkX7DOd3/exec?key=${key}`, {
-            method: 'POST',
-            // body: JSON.stringify("{\"name\":[\"adam\"],\"email\":[\"awolfmil@gmail.com\"]}"),
-            body: JSON.stringify(formData),
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        });
+        // const response = await fetch(`https://cors-anywhere.herokuapp.com/https://script.google.com/macros/s/AKfycbxflVZ-4yH90gypFFoaSU17kjO-hMQ7qaTw72OuNWHuB5LtxeDSBtwyhPGLlkX7DOd3/exec?key=${key}`, {
+        //     method: 'POST',
+        //     // body: JSON.stringify("{\"name\":[\"adam\"],\"email\":[\"awolfmil@gmail.com\"]}"),
+        //     body: JSON.stringify(formData),
+        //     headers: {
+        //         'Content-Type': 'application/json'
+        //     }
+        // });
 
-        if(response.status !== 200){
-          throw(Error(response.statusText));
-        }
-        const parsedResponse = await response.json();
-        console.log(parsedResponse);
+        // if(response.status !== 200){
+        //   throw(Error(response.statusText));
+        // }
+        // const parsedResponse = await response.json();
+        // console.log(parsedResponse);
 
         document.getElementById('form').reset();
         document.getElementById('emailForm').style.display = 'none';

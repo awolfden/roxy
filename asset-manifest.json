@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.1b3fff09.chunk.css",
-    "main.js": "/static/js/main.d23f3cd7.chunk.js",
-    "main.js.map": "/static/js/main.d23f3cd7.chunk.js.map",
+    "main.js": "/static/js/main.22917cc5.chunk.js",
+    "main.js.map": "/static/js/main.22917cc5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7c9290f1.js",
     "runtime-main.js.map": "/static/js/runtime-main.7c9290f1.js.map",
     "static/css/2.8838ecd7.chunk.css": "/static/css/2.8838ecd7.chunk.css",
-    "static/js/2.ca277193.chunk.js": "/static/js/2.ca277193.chunk.js",
-    "static/js/2.ca277193.chunk.js.map": "/static/js/2.ca277193.chunk.js.map",
+    "static/js/2.15c9b918.chunk.js": "/static/js/2.15c9b918.chunk.js",
+    "static/js/2.15c9b918.chunk.js.map": "/static/js/2.15c9b918.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.714ddadfb64f7bd06daf9b7063636dd5.js": "/precache-manifest.714ddadfb64f7bd06daf9b7063636dd5.js",
+    "precache-manifest.d3d83aebb7228f7d31606fd403b75d01.js": "/precache-manifest.d3d83aebb7228f7d31606fd403b75d01.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.8838ecd7.chunk.css.map": "/static/css/2.8838ecd7.chunk.css.map",
     "static/css/main.1b3fff09.chunk.css.map": "/static/css/main.1b3fff09.chunk.css.map",
-    "static/js/2.ca277193.chunk.js.LICENSE.txt": "/static/js/2.ca277193.chunk.js.LICENSE.txt",
+    "static/js/2.15c9b918.chunk.js.LICENSE.txt": "/static/js/2.15c9b918.chunk.js.LICENSE.txt",
     "static/media/contact-roxy-logo.png": "/static/media/contact-roxy-logo.7a86ad60.png",
     "static/media/denver_COVIDBrunch.png": "/static/media/denver_COVIDBrunch.41e25646.png",
     "static/media/denver_COVIDDinner.png": "/static/media/denver_COVIDDinner.449a0d2e.png",
@@ -26,8 +26,8 @@
   "entrypoints": [
     "static/js/runtime-main.7c9290f1.js",
     "static/css/2.8838ecd7.chunk.css",
-    "static/js/2.ca277193.chunk.js",
+    "static/js/2.15c9b918.chunk.js",
     "static/css/main.1b3fff09.chunk.css",
-    "static/js/main.d23f3cd7.chunk.js"
+    "static/js/main.22917cc5.chunk.js"
   ]
 }

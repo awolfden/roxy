@@ -12,8 +12,32 @@ import InstagramFeed from './InstagramFeed/InstagramFeed';
 // import EmailCapture from './EmailCapture/EmailCapture';
 import EmailCaptureV2 from './EmailCaptureV2/EmailCaptureV2';
 import HolidayGiftCard from './HolidayGiftCard/HolidayGiftCard';
+import Analytics from "@segment/analytics.js-core/build/analytics";
+import SegmentIntegration from "@segment/analytics.js-integration-segmentio";
+
+// instantiate the library
+const analytics = new Analytics();
+
+// add Segment's own integration ( or any other device mode integration ) 
+analytics.use(SegmentIntegration);
+
+// define the integration settings object. 
+// Since we are using only Segment integration in this example, we only have 
+// "Segment.io" in the integrationSettings object
+const integrationSettings = {
+  "Segment.io": {
+    apiKey: "CCSausDWLBnBljkIISDht2F9P5FeZKJG",
+    retryQueue: true,
+    addBundledMetadata: true
+  }
+};
 
 
+// Initialize the library
+analytics.initialize(integrationSettings);
+
+// Happy tracking! 
+analytics.page('first page');
 
 class App extends Component {
   constructor(){
@@ -47,7 +71,7 @@ class App extends Component {
          {this.state.showLoader ? null : <OpenForMusic/>}
          {this.state.showLoader ? null : <HolidayGiftCard/>}
 
-         {this.state.showLoader ? null : <EmailCaptureV2/>}
+         {this.state.showLoader ? null : <EmailCaptureV2 analytics={analytics}/>}
 
          {/* {this.state.showLoader ? null : <EmailCapture/>} */}
          {this.state.showLoader ? null : <Calendars/>}

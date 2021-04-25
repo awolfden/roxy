@@ -6,6 +6,8 @@ import Backdrop from '@material-ui/core/Backdrop';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Fade from '@material-ui/core/Fade';
+import analytics from '@segment/analytics.js-core';
+
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -48,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function TransitionsModal() {
+export default function TransitionsModal(props) {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
   const [name, setName] = useState('');
@@ -81,7 +83,7 @@ const handleSubmit = async (formData, e) => {
     // const urlEncObj = this.JSON_to_URLEncoded(formData);
     // console.log(urlEncObj);
     const key = 'AIzaSyCyKy_hkInqbvPUtS3vhavzs__jPU3HOpY'
-
+//https://cors-proxy.htmldriven.com/?url=
     try {
         const response = await fetch(`https://cors-anywhere.herokuapp.com/https://script.google.com/macros/s/AKfycbxflVZ-4yH90gypFFoaSU17kjO-hMQ7qaTw72OuNWHuB5LtxeDSBtwyhPGLlkX7DOd3/exec?key=${key}`, {
             method: 'POST',
@@ -100,6 +102,14 @@ const handleSubmit = async (formData, e) => {
 
         document.getElementById('form').reset();
         document.getElementById('emailForm').style.display = 'none';
+        
+        let stringId = () => {
+          let id1 = Math.floor(Math.random() * 1000000000).toString();
+          let id2 = Math.floor(Math.random() * 1000000000).toString();
+          return id1 + '-' + id2;
+        }
+        const id = stringId();
+        props.analytics.identify(id, {"name": formData.name, "email": formData.email})
 
     } catch (err) {
         console.log(err);

@@ -32,6 +32,10 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: 'wrap',
     marginBottom: '15px'
   },
+  containerRight: {
+    display: 'flex',
+    justifyContent: 'flex-end'
+  },
   textField: {
     marginLeft: theme.spacing(1),
     marginRight: theme.spacing(1),
@@ -76,9 +80,10 @@ const handleSubmit = async (formData, e) => {
     console.log(JSON.stringify(formData));
     // const urlEncObj = this.JSON_to_URLEncoded(formData);
     // console.log(urlEncObj);
+    const key = 'AIzaSyCyKy_hkInqbvPUtS3vhavzs__jPU3HOpY'
 
     try {
-        const response = await fetch("https://cors-anywhere.herokuapp.com/https://script.google.com/macros/s/AKfycbwk6luus1PihIxp6fDMMd5-nZuDyFJNq6VgRygE8ccXhudSXME/exec", {
+        const response = await fetch(`https://cors-anywhere.herokuapp.com/https://script.google.com/macros/s/AKfycbxflVZ-4yH90gypFFoaSU17kjO-hMQ7qaTw72OuNWHuB5LtxeDSBtwyhPGLlkX7DOd3/exec?key=${key}`, {
             method: 'POST',
             // body: JSON.stringify("{\"name\":[\"adam\"],\"email\":[\"awolfmil@gmail.com\"]}"),
             body: JSON.stringify(formData),
@@ -99,7 +104,7 @@ const handleSubmit = async (formData, e) => {
     } catch (err) {
         console.log(err);
     }
-
+    handleClose();
 }
   
 
@@ -120,6 +125,9 @@ const handleSubmit = async (formData, e) => {
       >
         <Fade in={open}>
           <div className={classes.paper}>
+            <div className={classes.containerRight}>
+              <div onClick={handleClose}><p>x</p></div>
+            </div>
             <div id="emailForm" style={{display:'flex', justifyContent: 'center', marginBottom: '35px'}}>
                 <div style={{width: '65%'}}>
                 <h2 style={{textAlign: 'center'}}>Join the mailing list for 10% off your next in person order!</h2>

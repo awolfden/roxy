@@ -1,6 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 import { makeStyles } from '@material-ui/core/styles';
+import analytics from '@segment/analytics.js-core';
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -20,21 +21,21 @@ const useStyles = makeStyles((theme) => ({
   }));
   
 
-
-
 export default function MusicEvent(props) {
+    console.log(props);
     const classes = useStyles();    
     const time = props.event.start.toString();
     let newTime = moment(time).format("hh:mm:ss a");
+
+
     newTime = newTime[0] != 0 ? newTime.slice(0, 5) + ' ' + newTime.slice(8) : newTime.slice(1, 5) + ' ' + newTime.slice(8);
-    
         return (
             <div className="flexContainer">
                 <div className={classes.paper}>
                     <h1 className={classes.bandName}>{props.event.title}</h1>
                     <h1>{`${newTime}`}</h1>
                     <h1>{props.event.description}</h1>
-                    {props.event.location ? <a href={props.event.location} target="_blank" rel="noopener noreferrer">Get Tickets Here!</a> : null}
+                    {props.event.location ? <a href={props.event.location} target="_blank" rel="noopener noreferrer" >Get Tickets Here!</a> : null}
                 </div>
             </div>
            

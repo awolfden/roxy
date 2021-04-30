@@ -136,7 +136,7 @@ const handleSubmit = async (formData, e) => {
         <Fade in={open}>
           <div className={classes.paper}>
             <div className={classes.containerRight}>
-              <div onClick={handleClose}><p>x</p></div>
+              <div onClick={handleClose}><Button>x</Button></div>
             </div>
             <div id="emailForm" style={{display:'flex', justifyContent: 'center', marginBottom: '35px'}}>
                 <div style={{width: '65%'}}>

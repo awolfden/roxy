@@ -69,12 +69,12 @@ class App extends Component {
          {this.state.showLoader ? null : <Navigation/>}
          {this.state.showLoader ? null : <Home/>}
          {this.state.showLoader ? null : <OpenForMusic/>}
-         {this.state.showLoader ? null : <HolidayGiftCard/>}
+         {this.state.showLoader ? null : <HolidayGiftCard analytics={analytics}/>}
 
          {this.state.showLoader ? null : <EmailCaptureV2 analytics={analytics}/>}
 
          {/* {this.state.showLoader ? null : <EmailCapture/>} */}
-         {this.state.showLoader ? null : <Calendars/>}
+         {this.state.showLoader ? null : <Calendars analytics={analytics}/>}
          {this.state.showLoader ? null : <Navigation/>}
          {this.state.showLoader ? null : <FoodMenu/>}
          {this.state.showLoader ? null : <Contact/>}

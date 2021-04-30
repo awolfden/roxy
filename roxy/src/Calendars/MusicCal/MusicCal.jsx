@@ -9,10 +9,11 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 import '../../App.css';
 
 
+
 const localizer = momentLocalizer(moment);
 
 
-export default function MusicCal() {
+export default function MusicCal(props) {
 
   const [cal_events, setCalEvents] = useState([]);
   const [selected, setSelected] = useState(false);
@@ -87,9 +88,10 @@ export default function MusicCal() {
   
   
 
-  const showEvent = (e) => {
+  const showEvent = async (e) => {
     setSelected(true);
     setThisEvent(e);
+    props.analytics.track("Music Event Clicked", e);
   }
 
   const hideEvent = (e) => {
@@ -98,6 +100,8 @@ export default function MusicCal() {
       setThisEvent(null);
     }    
   }
+
+
 
     return (
       <div onClick={hideEvent} style={{height: 700}}>
@@ -121,7 +125,7 @@ export default function MusicCal() {
             />
           </div>
         </div>
-        {selected ? <MusicEvent event={thisEvent}/> : null}
+        {selected ? <MusicEvent event={thisEvent} /> : null}
        
       </div>
     );

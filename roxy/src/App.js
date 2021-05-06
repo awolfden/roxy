@@ -9,35 +9,12 @@ import Contact from './Contact/Contact';
 // import Shop from './Shop/Shop';
 import Loader from './Loader/Loader';
 import InstagramFeed from './InstagramFeed/InstagramFeed';
-// import EmailCapture from './EmailCapture/EmailCapture';
 import EmailCaptureV2 from './EmailCaptureV2/EmailCaptureV2';
 import HolidayGiftCard from './HolidayGiftCard/HolidayGiftCard';
-import Analytics from "@segment/analytics.js-core/build/analytics";
-import SegmentIntegration from "@segment/analytics.js-integration-segmentio";
+import ReactGA from 'react-ga';
 
-// instantiate the library
-const analytics = new Analytics();
-
-// add Segment's own integration ( or any other device mode integration ) 
-analytics.use(SegmentIntegration);
-
-// define the integration settings object. 
-// Since we are using only Segment integration in this example, we only have 
-// "Segment.io" in the integrationSettings object
-const integrationSettings = {
-  "Segment.io": {
-    apiKey: "CCSausDWLBnBljkIISDht2F9P5FeZKJG",
-    retryQueue: true,
-    addBundledMetadata: true
-  }
-};
-
-
-// Initialize the library
-analytics.initialize(integrationSettings);
-
-// Happy tracking! 
-analytics.page('first page');
+ReactGA.initialize('UA-196039687-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 class App extends Component {
   constructor(){
@@ -60,21 +37,14 @@ class App extends Component {
     return (
       <div className="App">
         
-         
-         
-
          {this.state.showLoader ? <Loader/> : null}
-
 
          {this.state.showLoader ? null : <Navigation/>}
          {this.state.showLoader ? null : <Home/>}
          {this.state.showLoader ? null : <OpenForMusic/>}
-         {this.state.showLoader ? null : <HolidayGiftCard analytics={analytics}/>}
-
-         {this.state.showLoader ? null : <EmailCaptureV2 analytics={analytics}/>}
-
-         {/* {this.state.showLoader ? null : <EmailCapture/>} */}
-         {this.state.showLoader ? null : <Calendars analytics={analytics}/>}
+         {this.state.showLoader ? null : <HolidayGiftCard/>}
+         {this.state.showLoader ? null : <EmailCaptureV2/>}
+         {this.state.showLoader ? null : <Calendars/>}
          {this.state.showLoader ? null : <Navigation/>}
          {this.state.showLoader ? null : <FoodMenu/>}
          {this.state.showLoader ? null : <Contact/>}

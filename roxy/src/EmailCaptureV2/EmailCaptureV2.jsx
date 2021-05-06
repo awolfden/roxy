@@ -6,8 +6,6 @@ import Backdrop from '@material-ui/core/Backdrop';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Fade from '@material-ui/core/Fade';
-import analytics from '@segment/analytics.js-core';
-
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -54,7 +52,9 @@ export default function TransitionsModal(props) {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
   const [name, setName] = useState('');
+  const [lname, setLName] = useState('');
   const [email, setEmail] = useState('');
+  const [requiredField, setRequiredField] = useState(false);
 
   const handleOpen = () => {
     setOpen(true);
@@ -72,6 +72,10 @@ export default function TransitionsModal(props) {
     e.preventDefault();
     setName(e.target.value)
   }
+  const handleChangeLName = (e) => {
+    e.preventDefault();
+    setLName(e.target.value)
+  }
   const handleChangeEmail = (e) => {
     e.preventDefault();
     setEmail(e.target.value)
@@ -79,44 +83,32 @@ export default function TransitionsModal(props) {
 
 const handleSubmit = async (formData, e) => {
     e.preventDefault();
-    console.log(JSON.stringify(formData));
-    // const urlEncObj = this.JSON_to_URLEncoded(formData);
-    // console.log(urlEncObj);
-    const key = 'AIzaSyCyKy_hkInqbvPUtS3vhavzs__jPU3HOpY'
-//https://cors-proxy.htmldriven.com/?url=
+    // console.log(JSON.stringify(formData));
+    
+    if (!name || !lname || !email) {
+      setRequiredField(true);
+      return;
+    }
+    handleClose();
     try {
-        // const response = await fetch(`https://cors-anywhere.herokuapp.com/https://script.google.com/macros/s/AKfycbxflVZ-4yH90gypFFoaSU17kjO-hMQ7qaTw72OuNWHuB5LtxeDSBtwyhPGLlkX7DOd3/exec?key=${key}`, {
-        //     method: 'POST',
-        //     // body: JSON.stringify("{\"name\":[\"adam\"],\"email\":[\"awolfmil@gmail.com\"]}"),
-        //     body: JSON.stringify(formData),
-        //     headers: {
-        //         'Content-Type': 'application/json'
-        //     }
-        // });
+        const response = await fetch(`https://broadway-roxy-mailchimp-server.herokuapp.com/users/newuser`, {
+            method: 'POST',
+            body: JSON.stringify(formData),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
 
-        // if(response.status !== 200){
-        //   throw(Error(response.statusText));
-        // }
-        // const parsedResponse = await response.json();
-        // console.log(parsedResponse);
-
-        document.getElementById('form').reset();
-        document.getElementById('emailForm').style.display = 'none';
-        
-        let stringId = () => {
-          let id1 = Math.floor(Math.random() * 1000000000).toString();
-          let id2 = Math.floor(Math.random() * 1000000000).toString();
-          return id1 + '-' + id2;
+        if(response.status !== 200){
+          throw(Error(response.statusText));
         }
-        const id = stringId();
-        props.analytics.identify(id, {"name": formData.name, "email": formData.email})
 
+        const parsedResponse = await response.json();
+        // console.log(parsedResponse);
     } catch (err) {
         console.log(err);
     }
-    handleClose();
 }
-  
 
   return (
     <div className={classes.modalDiv}>
@@ -145,20 +137,34 @@ const handleSubmit = async (formData, e) => {
                     id={'form'}
                     style={{display: 'flex', flexDirection: 'column'}}
                     noValidate autoComplete="off"
-                    onSubmit={handleSubmit.bind(null, {"name": name, "email": email})}
+                    onSubmit={handleSubmit.bind(null, {"fname": name, "lname": lname, "email": email})}
                     >
-                    
+                    <div style={{display: 'flex'}}>
+                      <TextField
+                          required={requiredField ? true : false}
+                          id="outlined-name"
+                          label="First Name"
+                          className={classes.textField}
+                          value={name}
+                          onChange={handleChangeName}
+                          margin="normal"
+                          variant="outlined"
+                          name="name"
+                      />
+                      <TextField
+                          required={requiredField ? true : false}
+                          id="outlined-name"
+                          label="Last Name"
+                          className={classes.textField}
+                          value={lname}
+                          onChange={handleChangeLName}
+                          margin="normal"
+                          variant="outlined"
+                          name="lname"
+                      />
+                    </div>
                     <TextField
-                        id="outlined-name"
-                        label="Name"
-                        className={classes.textField}
-                        value={name}
-                        onChange={handleChangeName}
-                        margin="normal"
-                        variant="outlined"
-                        name="name"
-                    />
-                    <TextField
+                        required={requiredField ? true : false}
                         id="outlined-name"
                         label="Email"
                         className={classes.textField}
@@ -168,8 +174,6 @@ const handleSubmit = async (formData, e) => {
                         variant="outlined"
                         name="email"
                     />
-                    
-                    
                     <Button type="submit" variant="outlined" className={classes.button}>
                         Submit
                     </Button>
@@ -179,7 +183,6 @@ const handleSubmit = async (formData, e) => {
           </div>
         </Fade>
       </Modal>
-      
     </div>
   );
 }

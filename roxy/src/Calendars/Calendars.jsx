@@ -29,7 +29,7 @@ export default function CenteredTabs(props) {
     
         if(tab === 1){
             return(
-                <MusicCal analytics={props.analytics} />
+                <MusicCal/>
             )
         } else if(tab === 2){
             return(
@@ -48,7 +48,7 @@ export default function CenteredTabs(props) {
                 textColor="primary"
                 centered
             >
-                <Tab onClick={() => setTab(1)} label="Music Calendar" analytics={props.analytics}/>
+                <Tab onClick={() => setTab(1)} label="Music Calendar" />
                 {/* <Tab onClick={() => setTab(2)} label="Events & Specials" /> */}
             </Tabs>
         </Paper>

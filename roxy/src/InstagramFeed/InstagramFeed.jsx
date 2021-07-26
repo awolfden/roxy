@@ -15,7 +15,7 @@ class InstagramFeed extends Component {
     }
 
     getPosts = async () => {
-        const apiKey = 'IGQVJWQVhYZADZAZATlN6eTA5UmllVnRZAV3ZA1OWducUo0dktxS2dQbk9vblNNTG1qV3QtaVB4QzIwV05pb3pfcEpJandQQWhacm02ZAVZA6ZAU9saExNVjdLNFVrdVM2SmQteXVKR2k2ZAkRYZAkpyNkhNMDIzRAZDZD';
+        const apiKey = 'IGQVJYNUtRb3FadGFYb09aTHVzUzk0VWxlclRtT1NJSDBXazQwNUc1amNjcVdvaG0yV1o5SU1Icl9fMDNkVDZAIcWdKd0hKdzRMNGZATMDlhWS0tdGtycGxMbnBZARkY3cEZAyTllzcDdxcDhVVEZAkQUZACcwZDZD';
         
         try {
           const response = await fetch(`https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,permalink&access_token=${apiKey}`);

@@ -83,7 +83,6 @@ export default function TransitionsModal(props) {
 
 const handleSubmit = async (formData, e) => {
     e.preventDefault();
-    // console.log(JSON.stringify(formData));
     
     if (!name || !lname || !email) {
       setRequiredField(true);
@@ -91,7 +90,8 @@ const handleSubmit = async (formData, e) => {
     }
     handleClose();
     try {
-        const response = await fetch(`https://broadway-roxy-mailchimp-server.herokuapp.com/users/newuser`, {
+        formData.site = 'broadway';
+        const response = await fetch(`https://broadway-roxy-mailchimp-server.herokuapp.com/users/newuser`, {        
             method: 'POST',
             body: JSON.stringify(formData),
             headers: {
@@ -104,7 +104,7 @@ const handleSubmit = async (formData, e) => {
         }
 
         const parsedResponse = await response.json();
-        // console.log(parsedResponse);
+        console.log(parsedResponse);
     } catch (err) {
         console.log(err);
     }

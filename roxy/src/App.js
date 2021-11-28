@@ -6,11 +6,11 @@ import OpenForMusic from './OpenForMusic/OpenForMusic';
 import Calendars from './Calendars/Calendars';
 import FoodMenu from './FoodMenu/FoodMenu';
 import Contact from './Contact/Contact';
-// import Shop from './Shop/Shop';
 import Loader from './Loader/Loader';
 import InstagramFeed from './InstagramFeed/InstagramFeed';
 import EmailCaptureV2 from './EmailCaptureV2/EmailCaptureV2';
 import HolidayGiftCard from './HolidayGiftCard/HolidayGiftCard';
+import Specials from './Specials/Specials';
 import ReactGA from 'react-ga';
 
 ReactGA.initialize('UA-196039687-1');
@@ -42,6 +42,7 @@ class App extends Component {
          {this.state.showLoader ? null : <Navigation/>}
          {this.state.showLoader ? null : <Home/>}
          {this.state.showLoader ? null : <OpenForMusic/>}
+         {this.state.showLoader ? null : <Specials/>}
          {this.state.showLoader ? null : <HolidayGiftCard/>}
          {this.state.showLoader ? null : <EmailCaptureV2/>}
          {this.state.showLoader ? null : <Calendars/>}
@@ -49,8 +50,6 @@ class App extends Component {
          {this.state.showLoader ? null : <FoodMenu/>}
          {this.state.showLoader ? null : <Contact/>}
          {this.state.showLoader ? null : <InstagramFeed/>}
-         
-         {/* <Shop/> */}
   
       </div>
     )

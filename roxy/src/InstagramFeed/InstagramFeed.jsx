@@ -15,7 +15,7 @@ class InstagramFeed extends Component {
     }
 
     getPosts = async () => {
-        const apiKey = 'IGQVJYNUtRb3FadGFYb09aTHVzUzk0VWxlclRtT1NJSDBXazQwNUc1amNjcVdvaG0yV1o5SU1Icl9fMDNkVDZAIcWdKd0hKdzRMNGZATMDlhWS0tdGtycGxMbnBZARkY3cEZAyTllzcDdxcDhVVEZAkQUZACcwZDZD';
+        const apiKey = 'IGQVJYNWRqRjBnNWthZAGpDaUhTdXcyN2FMSzN6WGJfQ0RWLTFCVXItUHIwUng3ZA28wTEpQdF9OcTA5ZAFFPZA2Q1aGtuaVllUjZALd1VnN2xmOU0tQ2F5SC1WZAlBnVFg0V2xsNTJkOFlYU2FpMVFmXzBENwZDZD';
         
         try {
           const response = await fetch(`https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,permalink&access_token=${apiKey}`);
@@ -23,32 +23,32 @@ class InstagramFeed extends Component {
             throw(Error(response.statusText));
           }
           const parsedResponse = await response.json();
-        //   console.log(parsedResponse, "insta PR");
-    
-          const postsArray = parsedResponse.data.map((post) => {
-            // console.log(post);
-            return {
-                id: post.id,
-                img: post.media_url,
-                hyperlink: post.permalink,
-                caption: post.caption
-            }
-            
+
+          const postsArray = parsedResponse.data.map((post, index) => {
+              return {
+                  id: post.id,
+                  img: post.media_url,
+                  hyperlink: post.permalink,
+                  caption: post.caption,
+                  media_type: post.media_type
+                }              
           });
-    
-          //console.log(postsArray, "posts array");
+          
+          postsArray.forEach((post, index) => {
+            if (post.media_type == "VIDEO") {
+              postsArray.splice(index, 1)
+            } 
+          })
+
           this.setState({
             instaPosts: postsArray
           })
     
         } catch (error){
           console.log(error);
-          
         }
-    
       }
 
-    
 
     render(){
         const showPosts = 

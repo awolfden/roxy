@@ -10,7 +10,7 @@
     "http-proxy-middleware": "^0.19.1",
     "lodash": "^4.17.21",
     "lodash.template": "^4.5.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "react": "^16.12.0",
     "react-big-calendar": "^0.22.1",
     "react-dom": "^16.12.0",

@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0ec98cffd092b6565472567075299754",
+    "revision": "9d7ab5e93abb2ad1d168756ebab64ef6",
     "url": "/index.html"
   },
   {
-    "revision": "afeff68b794825cdb326",
+    "revision": "afd61f84dde6d6bcc6ef",
     "url": "/static/css/2.e428341d.chunk.css"
   },
   {
-    "revision": "59bb109faaf24c79555f",
+    "revision": "5a6bfa0d90edce4e2ac7",
     "url": "/static/css/main.1e4fae91.chunk.css"
   },
   {
-    "revision": "afeff68b794825cdb326",
-    "url": "/static/js/2.b56d030d.chunk.js"
+    "revision": "afd61f84dde6d6bcc6ef",
+    "url": "/static/js/2.efa2d2d9.chunk.js"
   },
   {
     "revision": "100491cebde475599a96dd6d3df56cfb",
-    "url": "/static/js/2.b56d030d.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.efa2d2d9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "59bb109faaf24c79555f",
-    "url": "/static/js/main.9326f33a.chunk.js"
+    "revision": "5a6bfa0d90edce4e2ac7",
+    "url": "/static/js/main.48391538.chunk.js"
   },
   {
     "revision": "527953283837e9269397",
@@ -48,10 +48,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/gramophone_smaller.47cc3045.png"
   },
   {
-    "revision": "b3b23779b2396ce5be671786781a7825",
-    "url": "/static/media/holiday_gc_banner.b3b23779.png"
-  },
-  {
     "revision": "798d901296cf3600998e0722c48497f9",
     "url": "/static/media/menu-roxy-logo.798d9012.png"
   },
@@ -60,8 +56,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/openformusic.05a36bd7.png"
   },
   {
+    "revision": "e7cce9b2273206ec2ff88cffec9ae43a",
+    "url": "/static/media/roxy_specials.e7cce9b2.png"
+  },
+  {
     "revision": "86dc4a720762e47082169e4a34b07975",
     "url": "/static/media/specials_header.86dc4a72.png"
+  },
+  {
+    "revision": "38493298df6753a3b559420f09dc8bdf",
+    "url": "/static/media/summer_banner.38493298.png"
   },
   {
     "revision": "a75d4046144fb33a6d70ee586eaaeab3",

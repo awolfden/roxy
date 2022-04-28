@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Navigation from './Navigation/Navigation';
 import Home from './Home/Home';
@@ -17,13 +17,13 @@ ReactGA.initialize('UA-196039687-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 class App extends Component {
-  constructor(){
+  constructor() {
     super();
     this.state = {
-      showLoader : true
+      showLoader: true
     }
   }
-  
+
   componentDidMount = () => {
     setTimeout(() => {
       this.setState({
@@ -33,28 +33,28 @@ class App extends Component {
   }
 
 
-  render(){
+  render() {
     return (
       <div className="App">
-        
-         {this.state.showLoader ? <Loader/> : null}
 
-         {this.state.showLoader ? null : <Navigation/>}
-         {this.state.showLoader ? null : <Home/>}
-         {this.state.showLoader ? null : <OpenForMusic/>}
-         {this.state.showLoader ? null : <Specials/>}
-         {this.state.showLoader ? null : <HolidayGiftCard/>}
-         {this.state.showLoader ? null : <EmailCaptureV2/>}
-         {this.state.showLoader ? null : <Calendars/>}
-         {this.state.showLoader ? null : <Navigation/>}
-         {this.state.showLoader ? null : <FoodMenu/>}
-         {this.state.showLoader ? null : <Contact/>}
-         {this.state.showLoader ? null : <InstagramFeed/>}
-  
+        {this.state.showLoader ? <Loader /> : null}
+
+        {this.state.showLoader ? null : <Navigation />}
+        {this.state.showLoader ? null : <Home />}
+        {this.state.showLoader ? null : <OpenForMusic />}
+        {/* {this.state.showLoader ? null : <Specials />} */}
+        {this.state.showLoader ? null : <HolidayGiftCard />}
+        {this.state.showLoader ? null : <EmailCaptureV2 />}
+        {this.state.showLoader ? null : <Calendars />}
+        {this.state.showLoader ? null : <Navigation />}
+        {this.state.showLoader ? null : <FoodMenu />}
+        {this.state.showLoader ? null : <Contact />}
+        {this.state.showLoader ? null : <InstagramFeed />}
+
       </div>
     )
   }
-  
+
 }
 
 export default App;
